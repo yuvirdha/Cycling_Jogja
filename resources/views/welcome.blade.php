@@ -28,7 +28,7 @@
         @include('include.icongridbef')
         @foreach($event as $e)
         <div class="container">
-        <div class="col-md-9">
+        <div class="col-md-0">
                 <div class="profile-content">
                     <h3>Agenda Cycling
                       </h3>

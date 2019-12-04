@@ -51,14 +51,17 @@
                                 <table>
                                   <tr>  
                                     <td><i class="far fa-calendar m-auto text primary" style="color:#F38230;"></i></td>
+                                    <td> </td>
                                     <td><h6>{{ $e->waktu_pelaksanaan}}</h6></td>
                                   </tr>
                                   <tr>  
                                       <td><i class="fas fa-route m-auto text primary" style="color:#F38230;"></i></td>
+                                      <td> </td>
                                       <td><h6>{{ $e->rute}}</h6></td>
                                     </tr>
                                     <tr>  
                                         <td><i class="fas fa-ticket-alt m-auto text primary" style="color:#F38230;"></i></td>
+                                        <td> </td>
                                         <td><h6>{{ $e->harga_tiket}}</h6></td>
                                       </tr>
                                 </table>
