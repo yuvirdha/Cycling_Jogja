@@ -9,11 +9,11 @@ use Auth;
 class AdminLoginController extends Controller
 {
   
-    protected $redirectTo = '/admin';
+    protected $redirectTo = '/admin/dashboard';
 
     public function __construct()
     {
-        $this->middleware('guest');
+        $this->middleware('guest')->except('logout');
     }
     public function showLoginForm()
     {
