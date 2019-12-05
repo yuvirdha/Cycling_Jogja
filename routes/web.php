@@ -16,6 +16,11 @@
 Route::get('/masuk', function () {
     return view('masuk');
 });
+//Route::get('/login_', function () {
+//    return view('auth.loginview');
+//});
+
+
 
 
 Auth::routes();
