@@ -32,7 +32,16 @@ Route::get('/pesan_tiket/{id_event}', 'PemesananController@store');
 Route::get('/admin/login', 'Auth\AdminLoginController@ShowLoginForm')->middleware('guest');
 Route::post('/admin/login', 'Auth\AdminLoginController@login')->name('admin-login');
 Route::get('/admin/dashboard', 'AdminController@index')->name('admin.dashboard');
-Route::get('/tambahevent','AdminController@create');
-Route::post('/tambahevent','AdminiController@store');
+
+Route::get('/admin/tabel_pengguna','TabelPenggunaController@index');
+Route::get('/admin/hapus_pengguna/{id}','TabelPenggunaController@hapus');
+
+
+Route::get('/admin/tabel_event','TabelEventController@index');
+Route::get('/admin/tambahevent','TabelEventController@create');
+Route::post('/admin/store','TabelEventController@store');
+Route::get('/admin/editevent/{id}','TabelEventController@edit');
+Route::post('/admin/update','TabelEventController@update');
+Route::get('/admin/hapus/{id}','TabelEventController@hapus');
 
 Route::get('/tiket', 'TiketController@index');
