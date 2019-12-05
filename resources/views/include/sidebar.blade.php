@@ -35,8 +35,8 @@
       <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
         <div class="bg-white py-2 collapse-inner rounded">
           <h6 class="collapse-header">Tabel:</h6>
-          <a class="collapse-item" href="buttons.html">Pengguna</a>
-          <a class="collapse-item" href="cards.html">Event</a>
+          <a class="collapse-item" href="/admin/tabel_pengguna">Pengguna</a>
+          <a class="collapse-item" href="/admin/tabel_event">Event</a>
           <a class="collapse-item" href="cards.html">Pemesanan Tiket</a>
           <a class="collapse-item" href="cards.html">Penyewaan Sepeda</a>
           
