@@ -44,9 +44,12 @@
                   <td>Event</td>
                   <td>Token</td>
                 </tr>
+                <?php
+                $no=1
+                ?>
                 @foreach($tiket as $data)
                 <tr>
-                   <td>1</td>
+                   <td>{{$no++}}</td>
                    <td>{{$data->nama}}</td>
                    <td>{{$data->nama_event}}</td>
                    <td>{{$data->token}}</td>

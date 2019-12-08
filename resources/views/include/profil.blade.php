@@ -11,7 +11,7 @@
                 <!-- SIDEBAR USER TITLE -->
                 <div class="profile-usertitle">
                   <div class="profile-usertitle-name">
-                    Abdullah Muhammad Brad Pitt 
+                  {{ Auth::user()->nama }}
                   </div>
                 </div>
                 <!-- END SIDEBAR USER TITLE -->

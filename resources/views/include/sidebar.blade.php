@@ -37,7 +37,7 @@
           <h6 class="collapse-header">Tabel:</h6>
           <a class="collapse-item" href="/admin/tabel_pengguna">Pengguna</a>
           <a class="collapse-item" href="/admin/tabel_event">Event</a>
-          <a class="collapse-item" href="cards.html">Pemesanan Tiket</a>
+          <a class="collapse-item" href="/admin/tabel_tiket">Pemesanan Tiket</a>
           <a class="collapse-item" href="cards.html">Penyewaan Sepeda</a>
           
         </div>

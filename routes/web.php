@@ -33,6 +33,10 @@ Route::get('/homepage', 'EventController@index')->name('user.homepage');
 Route::get('/pemesanan/{id}', 'PemesananController@index');
 Route::get('/pesan_tiket/{id_event}', 'PemesananController@store');
 
+Route::get('/editprofil/{id}','ProfilController@edit');
+
+
+
 //Admin
 Route::get('/admin/login', 'Auth\AdminLoginController@ShowLoginForm')->middleware('guest');
 Route::post('/admin/login', 'Auth\AdminLoginController@login')->name('admin-login');
@@ -48,5 +52,7 @@ Route::post('/admin/store','TabelEventController@store');
 Route::get('/admin/editevent/{id}','TabelEventController@edit');
 Route::post('/admin/update','TabelEventController@update');
 Route::get('/admin/hapus/{id}','TabelEventController@hapus');
+
+Route::get('/admin/tabel_tiket','TabelTiketController@index');
 
 Route::get('/tiket', 'TiketController@index');
