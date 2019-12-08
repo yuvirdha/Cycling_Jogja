@@ -55,7 +55,7 @@
                             <div class="form-group row">
                                     <label class="col-sm-2 col-form-label">Gambar Event</label>
                                     <div class="col-sm-5">
-                                      <input type="text" name="gambar_event" required="required" class="form-control">
+                                      <input type="file" name="gambar_event" required="required" class="form-control">
                                     </div>
                                   </div>
                                     <div class="form-group row">

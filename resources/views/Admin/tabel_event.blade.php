@@ -75,7 +75,7 @@
                   <tbody>
                         @foreach($events as $e)
                         <tr>
-                            <td>{{ $e->gambar_event }}</td>
+                            <td><img width="150px" src="{{ url('/data_file/'.$e->gambar_event) }}"></td>
                             <td>{{ $e->nama_event}}</td>
                             <td>{{ $e->rincian_event}}</td>
                             <td>{{ $e->waktu_pelaksanaan}}</td>
