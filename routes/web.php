@@ -38,6 +38,9 @@ Route::group(['middleware' => 'auth'], function () {
     Route::patch('/editprofil', 'ProfilController@update_profil');
 });
 
+Route::get('/tiket', 'TiketController@index');
+
+
 //Admin
 Route::get('/admin/login', 'Auth\AdminLoginController@ShowLoginForm')->middleware('guest');
 Route::post('/admin/login', 'Auth\AdminLoginController@login')->name('admin-login');
@@ -45,7 +48,6 @@ Route::get('/admin/dashboard', 'AdminController@index')->name('admin.dashboard')
 
 Route::get('/admin/tabel_pengguna','TabelPenggunaController@index');
 Route::get('/admin/hapus_pengguna/{id}','TabelPenggunaController@hapus');
-
 
 Route::get('/admin/tabel_event','TabelEventController@index');
 Route::get('/admin/tambahevent','TabelEventController@create');
@@ -56,4 +58,5 @@ Route::get('/admin/hapus/{id}','TabelEventController@hapus');
 
 Route::get('/admin/tabel_tiket','TabelTiketController@index');
 
-Route::get('/tiket', 'TiketController@index');
+Route::get('/admin/tabel_penyewa','TabelPenyewaController@index');
+

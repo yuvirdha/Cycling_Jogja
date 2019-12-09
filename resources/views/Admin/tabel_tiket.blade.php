@@ -69,8 +69,8 @@
               <a class="collapse-item" href="/admin/tabel_pengguna">Pengguna</a>
               <a class="collapse-item" href="/admin/tabel_event">Event</a>
               <a class="collapse-item" href="/admin/tabel_tiket">Pemesanan Tiket</a>
-              <a class="collapse-item" href="">Penyewa Sepeda</a>
-              <a class="collapse-item" href="">Sepeda</a>
+              <a class="collapse-item" href="/admin/tabel_penyewa">Penyewa Sepeda</a>
+              <a class="collapse-item" href="/admin/tabel_sepeda">Sepeda</a>
               
             </div>
           </div>
@@ -106,7 +106,7 @@
           <!-- DataTales Example -->
           <div class="card shadow mb-4">
             <div class="card-header py-3">
-              <h6 class="m-0 font-weight-bold text-primary">Data Event</h6>
+              <h6 class="m-0 font-weight-bold text-primary">Data Pemesanan Tiket</h6>
             </div>
             <div class="card-body">
                   
@@ -116,6 +116,7 @@
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                   <thead>
                     <tr>
+                            <th>No</th>
                             <th>Nama Peserta</th>
                             <th>Event yang diikuti</th>
                             <th>No Token</th>
@@ -124,6 +125,7 @@
                   </thead>
                   <tfoot>
                     <tr>
+                            <th>No</th>
                             <th>Nama Peserta</th>
                             <th>Event yang diikuti</th>
                             <th>No Token</th>
@@ -131,8 +133,12 @@
                     </tr>
                   </tfoot>
                   <tbody>
+                  <?php
+                   $no=1;
+                  ?>
                   @foreach($pendaftars as $t)
                 <tr>
+                   <td>{{$no++}}</td>
                    <td>{{$t->id_user}}</td>
                    <td>{{$t->id_event}}</td>
                    <td>{{$t->token}}</td>
