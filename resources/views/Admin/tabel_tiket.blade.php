@@ -69,8 +69,8 @@
               <a class="collapse-item" href="/admin/tabel_pengguna">Pengguna</a>
               <a class="collapse-item" href="/admin/tabel_event">Event</a>
               <a class="collapse-item" href="/admin/tabel_tiket">Pemesanan Tiket</a>
-              <a class="collapse-item" href="">Penyewa Sepeda</a>
-              <a class="collapse-item" href="">Sepeda</a>
+              <a class="collapse-item" href="/admin/tabel_penyewa">Penyewa Sepeda</a>
+              <a class="collapse-item" href="/admin/tabel_sepeda">Sepeda</a>
               
             </div>
           </div>
@@ -106,7 +106,7 @@
           <!-- DataTales Example -->
           <div class="card shadow mb-4">
             <div class="card-header py-3">
-              <h6 class="m-0 font-weight-bold text-primary">Data Event</h6>
+              <h6 class="m-0 font-weight-bold text-primary">Data Pemesanan Tiket</h6>
             </div>
             <div class="card-body">
                   

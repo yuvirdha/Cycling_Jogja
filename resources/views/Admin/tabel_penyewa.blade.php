@@ -31,70 +31,69 @@
     <!-- Sidebar -->
     <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
-      <!-- Sidebar - Brand -->
-      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
-        <div class="sidebar-brand-icon rotate-n-15">
-          <i class="fas fa-laugh-wink"></i>
-        </div>
-        <div class="sidebar-brand-text mx-3">Cycling Jogja Admin</div>
-      </a>
-  
-      <!-- Divider -->
-      <hr class="sidebar-divider my-0">
-  
-      <!-- Nav Item - Dashboard -->
-      <li class="nav-item">
-        <a class="nav-link" href="/admin/dashboard">
-          <i class="fas fa-fw fa-tachometer-alt"></i>
-          <span>Dashboard</span></a>
-      </li>
-  
-      <!-- Divider -->
-      <hr class="sidebar-divider">
-  
-      <!-- Heading -->
-      <div class="sidebar-heading">
-        Menu
-      </div>
-  
-      <!-- Nav Item - Pages Collapse Menu -->
-      <li class="nav-item active">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-          <i class="fas fa-fw fa-table"></i>
-          <span>Daftar Tabel</span>
-        </a>
-        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Tabel:</h6>
-            <a class="collapse-item" href="/admin/tabel_pengguna">Pengguna</a>
-            <a class="collapse-item" href="/admin/tabel_event">Event</a>
-            <a class="collapse-item" href="/admin/tabel_tiket">Pemesanan Tiket</a>
-            <a class="collapse-item" href="/admin/tabel_penyewa">Penyewa Sepeda</a>
-            <a class="collapse-item" href="/admin/tabel_sepeda">Sepeda</a>
-            
+        <!-- Sidebar - Brand -->
+        <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+          <div class="sidebar-brand-icon rotate-n-15">
+            <i class="fas fa-laugh-wink"></i>
           </div>
-        </div>
-      </li>
-  
-      <!-- Nav Item - Utilities Collapse Menu -->
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
-          <i class="fas fa-fw fa-wrench"></i>
-          <span>Buat Soal</span>
+          <div class="sidebar-brand-text mx-3">Cycling Jogja Admin</div>
         </a>
-        <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+    
+        <!-- Divider -->
+        <hr class="sidebar-divider my-0">
+    
+        <!-- Nav Item - Dashboard -->
+        <li class="nav-item">
+          <a class="nav-link" href="/admin/dashboard">
+            <i class="fas fa-fw fa-tachometer-alt"></i>
+            <span>Dashboard</span></a>
+        </li>
+    
+        <!-- Divider -->
+        <hr class="sidebar-divider">
+    
+        <!-- Heading -->
+        <div class="sidebar-heading">
+          Menu
         </div>
-      </li>
-  
-  
-      <!-- Sidebar Toggler (Sidebar) -->
-      <div class="text-center d-none d-md-inline">
-        <button class="rounded-circle border-0" id="sidebarToggle"></button>
-      </div>
-  
-    </ul>
-    <!-- End of Sidebar -->
-  
+    
+        <!-- Nav Item - Pages Collapse Menu -->
+        <li class="nav-item active">
+          <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+            <i class="fas fa-fw fa-table"></i>
+            <span>Daftar Tabel</span>
+          </a>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+              <h6 class="collapse-header">Tabel:</h6>
+              <a class="collapse-item" href="/admin/tabel_pengguna">Pengguna</a>
+              <a class="collapse-item" href="/admin/tabel_event">Event</a>
+              <a class="collapse-item" href="/admin/tabel_tiket">Pemesanan Tiket</a>
+              <a class="collapse-item" href="/admin/tabel_penyewa">Penyewa Sepeda</a>
+              <a class="collapse-item" href="/admin/tabel_sepeda">Sepeda</a>
+              
+            </div>
+          </div>
+        </li>
+    
+        <!-- Nav Item - Utilities Collapse Menu -->
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
+            <i class="fas fa-fw fa-wrench"></i>
+            <span>Buat Soal</span>
+          </a>
+          <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+          </div>
+        </li>
+    
+    
+        <!-- Sidebar Toggler (Sidebar) -->
+        <div class="text-center d-none d-md-inline">
+          <button class="rounded-circle border-0" id="sidebarToggle"></button>
+        </div>
+    
+      </ul>
+      <!-- End of Sidebar -->
     
     <!-- Content Wrapper -->
     <div id="content-wrapper" class="d-flex flex-column">
@@ -107,7 +106,7 @@
           <!-- DataTales Example -->
           <div class="card shadow mb-4">
             <div class="card-header py-3">
-              <h6 class="m-0 font-weight-bold text-primary">Data Event</h6>
+              <h6 class="m-0 font-weight-bold text-primary">Data Pemesanan Tiket</h6>
             </div>
             <div class="card-body">
               <div class="table-responsive">
@@ -115,58 +114,48 @@
                   <thead>
                     <tr>
                             <th>No</th>
-                            <th>Gambar Event</th>
-                            <th>Nama Event</th>
-                            <th>Rincian</th>
-                            <th>Waktu Pelaksanaan</th>
-                            <th>Rute</th>
-                            <th>Harga Tiket</th>
+                            <th>Nama Peserta</th>
+                            <th>Sepeda yang disewa</th>
+                            <th>No Token</th>
                             <th>Update</th>
                     </tr>
                   </thead>
                   <tfoot>
                     <tr>
                             <th>No</th>
-                            <th>Gambar Event</th>
-                            <th>Nama Event</th>
-                            <th>Rincian</th>
-                            <th>Waktu Pelaksanaan</th>
-                            <th>Rute</th>
-                            <th>Harga Tiket</th>
+                            <th>Nama Peserta</th>
+                            <th>Sepeda yang disewa</th>
+                            <th>No Token</th>
                             <th>Update</th>
                     </tr>
                   </tfoot>
                   <tbody>
                   <?php
-                    $no=1;
+                   $no=1;
                   ?>
-                        @foreach($events as $e)
-                        <tr>
-                            <td>{{$no++}}</td>
-                            <td><img width="150px" src="{{ url('/data_file/'.$e->gambar_event) }}"></td>
-                            <td>{{ $e->nama_event}}</td>
-                            <td>{{ $e->rincian_event}}</td>
-                            <td>{{ $e->waktu_pelaksanaan}}</td>
-                            <td>{{ $e->rute}}</td>
-                            <td>{{ $e->harga_tiket}}</td>
-                            <td>
-                                <a href="/admin/hapus/{{ $e->id }}" class="btn btn-primary">Hapus</a>
-                                <a href="/admin/editevent/{{ $e->id }}" class="btn btn-primary">Edit</a>
-                            </td>
-                        </tr>
-                        @endforeach
+                  @foreach($penyewa as $p)
+                <tr>
+                   <td>{{$no++}}</td>
+                   <td>{{$p->id_user}}</td>
+                   <td>{{$p->id_sepeda}}</td>
+                   <td>{{$p->token}}</td>
+                   <td>
+                      <a href="/admin/hapuspenyewa/{{ $p->id }}" class="btn btn-primary">Hapus</a>
+                      <a href="/admin/editpenyewa/{{ $p->id }}" class="btn btn-primary">Edit</a>
+                  </td>
+                </tr>
+                  @endforeach
                   </tbody>
                 </table>
-                <a href="/admin/tambahevent" class="btn btn-primary">Tambah</a>
+                <a href="/admin/tambahpenyewa" class="btn btn-primary">Tambah</a>
+              </div>
             </div>
-          </div>
 
         </div>
         <!-- /.container-fluid -->
 
       </div>
       <!-- End of Main Content -->
-
       <!-- Footer -->
       @include('include.footerAd')
       <!-- End of Footer -->
