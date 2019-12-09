@@ -116,6 +116,7 @@
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                   <thead>
                     <tr>
+                            <th>No</th>
                             <th>Nama Peserta</th>
                             <th>Event yang diikuti</th>
                             <th>No Token</th>
@@ -124,6 +125,7 @@
                   </thead>
                   <tfoot>
                     <tr>
+                            <th>No</th>
                             <th>Nama Peserta</th>
                             <th>Event yang diikuti</th>
                             <th>No Token</th>
@@ -131,8 +133,12 @@
                     </tr>
                   </tfoot>
                   <tbody>
+                  <?php
+                   $no=1;
+                  ?>
                   @foreach($pendaftars as $t)
                 <tr>
+                   <td>{{$no++}}</td>
                    <td>{{$t->id_user}}</td>
                    <td>{{$t->id_event}}</td>
                    <td>{{$t->token}}</td>

@@ -117,6 +117,7 @@
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                   <thead>
                     <tr>
+                            <th>No</th>
                             <th>Gambar Event</th>
                             <th>Nama Event</th>
                             <th>Rincian</th>
@@ -128,6 +129,7 @@
                   </thead>
                   <tfoot>
                     <tr>
+                            <th>No</th>
                             <th>Gambar Event</th>
                             <th>Nama Event</th>
                             <th>Rincian</th>
@@ -138,8 +140,12 @@
                     </tr>
                   </tfoot>
                   <tbody>
+                  <?php
+                    $no=1;
+                  ?>
                         @foreach($events as $e)
                         <tr>
+                            <td>{{$no++}}</td>
                             <td><img width="150px" src="{{ url('/data_file/'.$e->gambar_event) }}"></td>
                             <td>{{ $e->nama_event}}</td>
                             <td>{{ $e->rincian_event}}</td>

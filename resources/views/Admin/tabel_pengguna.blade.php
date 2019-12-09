@@ -113,6 +113,8 @@
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                   <thead>
                     <tr>
+                      <th>No</th>
+                      <th>Gambar Profil</th>
                       <th>Nama</th>
                       <th>Jenis Kelamin</th>
                       <th>Nomor HP</th>
@@ -126,6 +128,8 @@
                   </thead>
                   <tfoot>
                     <tr>
+                            <th>No</th>
+                            <th>Gambar Profil</th>
                             <th>Nama</th>
                             <th>Jenis Kelamin</th>
                             <th>Nomor HP</th>
@@ -138,8 +142,13 @@
                     </tr>
                   </tfoot>
                   <tbody>
+                  <?php
+                  $no=1;
+                  ?>
                         @foreach($users as $u)
                         <tr>
+                            <td>{{ $no++}}</td>
+                            <td>{{ $u->gambarprofil }}</td>
                             <td>{{ $u->nama }}</td>
                             <td>{{ $u->jenis_kelamin}}</td>
                             <td>{{ $u->nomor_hp}}</td>
