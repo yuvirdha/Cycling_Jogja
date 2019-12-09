@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Cycling Jogja Admin - Pengguna</title>
+  <title>Cycling Jogja Admin - Sepeda</title>
 
   <!-- Custom fonts for this template -->
   <link href="/admin/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -94,6 +94,7 @@
   
     </ul>
     <!-- End of Sidebar -->
+  
     
     <!-- Content Wrapper -->
     <div id="content-wrapper" class="d-flex flex-column">
@@ -106,66 +107,49 @@
           <!-- DataTales Example -->
           <div class="card shadow mb-4">
             <div class="card-header py-3">
-              <h6 class="m-0 font-weight-bold text-primary">Data Pengguna</h6>
+              <h6 class="m-0 font-weight-bold text-primary">Data Sepeda</h6>
             </div>
             <div class="card-body">
               <div class="table-responsive">
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                   <thead>
                     <tr>
-                      <th>No</th>
-                      <th>Gambar Profil</th>
-                      <th>Nama</th>
-                      <th>Jenis Kelamin</th>
-                      <th>Nomor HP</th>
-                      <th>Tanggal Lahir</th>
-                      <th>Riwayat</th>
-                      <th>Email</th>
-                      <th>Tanggal Dibuat</th>
-                      <th>Tanggal Update</th>
-                      <th>Update</th>
+                            <th>No</th>
+                            <th>Gambar Sepeda</th>
+                            <th>Jenis</th>
+                            <th>Harga</th>
+                            <th>Stok</th>
                     </tr>
                   </thead>
                   <tfoot>
                     <tr>
                             <th>No</th>
-                            <th>Gambar Profil</th>
-                            <th>Nama</th>
-                            <th>Jenis Kelamin</th>
-                            <th>Nomor HP</th>
-                            <th>Tanggal Lahir</th>
-                            <th>Riwayat</th>
-                            <th>Email</th>
-                            <th>Tanggal Dibuat</th>
-                            <th>Tanggal Update</th>
-                            <th>Update</th>
+                            <th>Gambar Sepeda</th>
+                            <th>Jenis</th>
+                            <th>Harga</th>
+                            <th>Stok</th>
                     </tr>
                   </tfoot>
                   <tbody>
                   <?php
-                  $no=1;
+                    $no=1;
                   ?>
-                        @foreach($users as $u)
+                        @foreach($sepeda as $s)
                         <tr>
-                            <td>{{ $no++}}</td>
-                            <td>{{ $u->gambarprofil }}</td>
-                            <td>{{ $u->nama }}</td>
-                            <td>{{ $u->jenis_kelamin}}</td>
-                            <td>{{ $u->nomor_hp}}</td>
-                            <td>{{ $u->tanggal_lahir}}</td>
-                            <td>{{ $u->riwayat}}</td>
-                            <td>{{ $u->email}}</td>
-                            <td>{{ $u->created_at}}</td>
-                            <td>{{ $u->updated_at}}</td>
+                            <td>{{$no++}}</td>
+                            <td><img width="150px" src="{{ url('/data_file/'.$e->gambar_sepeda) }}"></td>
+                            <td>{{ $s->jenis}}</td>
+                            <td>{{ $s->harga}}</td>
+                            <td>{{ $s->stock}}</td>
                             <td>
-                             
-                                <a href="/admin/hapus_pengguna/{{ $u->id }}" class="btn btn-primary">Hapus</a>
+                                <a href="/admin/hapussepeda/{{ $s->id }}" class="btn btn-primary">Hapus</a>
+                                <a href="/admin/editsepeda/{{ $s->id }}" class="btn btn-primary">Edit</a>
                             </td>
                         </tr>
                         @endforeach
                   </tbody>
                 </table>
-              </div>
+                <a href="/admin/tambahsepeda" class="btn btn-primary">Tambah</a>
             </div>
           </div>
 

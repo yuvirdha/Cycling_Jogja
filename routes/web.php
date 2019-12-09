@@ -51,7 +51,7 @@ Route::get('/admin/hapus_pengguna/{id}','TabelPenggunaController@hapus');
 
 Route::get('/admin/tabel_event','TabelEventController@index');
 Route::get('/admin/tambahevent','TabelEventController@create');
-Route::post('/admin/store','TabelEventController@store');
+Route::post('/admin/store_event','TabelEventController@store');
 Route::get('/admin/editevent/{id}','TabelEventController@edit');
 Route::post('/admin/update','TabelEventController@update');
 Route::get('/admin/hapus/{id}','TabelEventController@hapus');
@@ -60,3 +60,6 @@ Route::get('/admin/tabel_tiket','TabelTiketController@index');
 
 Route::get('/admin/tabel_penyewa','TabelPenyewaController@index');
 
+Route::get('/admin/tabel_sepeda','TabelSepedaController@index');
+Route::get('/admin/tambahsepeda','TabelSepedaController@create');
+Route::post('/admin/store_sepeda','TabelEventController@store');

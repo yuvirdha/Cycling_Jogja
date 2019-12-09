@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>SB Admin 2 </title>
+  <title>Cycling Jogja Admin - Penyewa Sepeda</title>
 
   <!-- Custom fonts for this template -->
   <link href="/admin/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -106,7 +106,7 @@
           <!-- DataTales Example -->
           <div class="card shadow mb-4">
             <div class="card-header py-3">
-              <h6 class="m-0 font-weight-bold text-primary">Data Pemesanan Tiket</h6>
+              <h6 class="m-0 font-weight-bold text-primary">Data Penyewa Sepeda</h6>
             </div>
             <div class="card-body">
               <div class="table-responsive">

@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>SB Admin 2 </title>
+  <title>Cycling Jogja Admin - Tambah Event</title>
 
   <!-- Custom fonts for this template -->
   <link href="/admin/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -50,7 +50,7 @@
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                   <thead>
                      <tbody>
-                      <form action="/admin/store" method="post">
+                      <form action="/admin/store_event" method="post">
                             {{ csrf_field() }}
                             <div class="form-group row">
                                     <label class="col-sm-2 col-form-label">Gambar Event</label>
