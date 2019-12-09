@@ -33,9 +33,10 @@ Route::get('/homepage', 'EventController@index')->name('user.homepage');
 Route::get('/pemesanan/{id}', 'PemesananController@index');
 Route::get('/pesan_tiket/{id_event}', 'PemesananController@store');
 
-Route::get('/editprofil/{id}','ProfilController@edit');
-
-
+Route::group(['middleware' => 'auth'], function () {
+    Route::get('/editprofil', 'ProfilController@edit_profil');
+    Route::patch('/editprofil', 'ProfilController@update_profil');
+});
 
 //Admin
 Route::get('/admin/login', 'Auth\AdminLoginController@ShowLoginForm')->middleware('guest');

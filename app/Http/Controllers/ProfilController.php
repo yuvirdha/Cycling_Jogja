@@ -13,31 +13,21 @@ class ProfilController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index($id)
+    public function edit_profil(Request $request)
     {
-        $user = Auth::user(); 
-        //print($user->id);
-
-        $user = DB::table('users')->where('id', $user->id)->get();
-
-        // print_r($event);
-        // print_r($user);
-        // die;
-
-        return view('pemesanan',compact('event','user'));
+        return view('/editprofil', [
+            'users' => $request->user()
+        ]);
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
- 
-public function edit($id)
+    public function update_profil(Request $request)
 {
-        $user = Auth::user(); 
-        $user = DB::table('users')->where('id', $user->id)->get();
-        return view('/editprofil',compact('user'));
+    $request->user()->update(
+        $request->all()
+    );
+
+
+    return redirect('homepage');
 
 }
   
