@@ -26,7 +26,7 @@ Route::get('/masuk', function () {
 Auth::routes();
 Route::get('/', 'AwalController@index');
 Route::get('/sewa', 'SewaController@index');
-Route::get('/cuacawelcome', 'CuacaAwalController@index');
+Route::get('/cuaca', 'CuacaAwalController@index');
 Route::get('/sewasepedawelcome', 'SewaSepedaController@index');
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/homepage', 'EventController@index')->name('user.homepage');

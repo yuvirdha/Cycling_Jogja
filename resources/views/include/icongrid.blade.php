@@ -14,6 +14,7 @@
             </div>
           </a>
             <div class="col-lg-2">
+            <a href="/cuaca">
               <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
                 <div class="features-icons-icon d-flex">
                     <i class="fas fa-cloud-sun m-auto" style="color:#F38230";></i>
@@ -21,6 +22,7 @@
                 <h5>Cuaca</h5>
               </div>
             </div>
+            </a>
             <div class="col-lg-2">
               <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
                 <div class="features-icons-icon d-flex">
