@@ -49,12 +49,20 @@ class RegisterController extends Controller
     protected function validator(array $data)
     {
         return Validator::make($data, [
+            'gambarprofil' =>[ 'required'],
             'nama' => ['required', 'string', 'max:255'],
             'jenis_kelamin' => ['required'],
             'tanggal_lahir' => ['required'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
         ]);
+        $gambarprofil = $request->file('gambarprofil');
+
+	    $img = time()."_".$gambarprofil->getClientOriginalName();
+
+			  // isi dengan nama folder tempat kemana file diupload
+	    $public = 'images';
+	    $gambarprofil->move($public,$img);
     }
 
     /**
@@ -66,6 +74,7 @@ class RegisterController extends Controller
     protected function create(array $data)
     {
         return User::create([
+            'gambarprofil' => $data['gambarprofil'],
             'nama' => $data['nama'],
             'jenis_kelamin' => $data['jenis_kelamin'],
             'nomor_hp' => $data['nomor_hp'],

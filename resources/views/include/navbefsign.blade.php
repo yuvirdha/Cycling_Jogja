@@ -21,7 +21,7 @@
                 <a class="nav-link js-scroll-trigger" href="/login">Masuk</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="/login">Daftar</a>
+                <a class="nav-link js-scroll-trigger" href="/register">Daftar</a>
               </li>
               @if (Route::has('masuk'))
               <li class="nav-item">
