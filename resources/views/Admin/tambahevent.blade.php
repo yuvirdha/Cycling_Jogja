@@ -50,7 +50,7 @@
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                   <thead>
                      <tbody>
-                      <form action="/admin/store_event" method="post">
+                      <form action="/admin/store_event" method="post" enctype="multipart/form-data">
                             {{ csrf_field() }}
                             <div class="form-group row">
                                     <label class="col-sm-2 col-form-label">Gambar Event</label>
