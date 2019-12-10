@@ -71,6 +71,7 @@
             <a class="collapse-item" href="/admin/tabel_tiket">Pemesanan Tiket</a>
             <a class="collapse-item" href="/admin/tabel_penyewa">Penyewa Sepeda</a>
             <a class="collapse-item" href="/admin/tabel_sepeda">Sepeda</a>
+            <a class="collapse-item" href="/admin/tabel_sepeda">Sepeda</a>
             
           </div>
         </div>
