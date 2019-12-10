@@ -71,7 +71,6 @@
             <a class="collapse-item" href="/admin/tabel_tiket">Pemesanan Tiket</a>
             <a class="collapse-item" href="/admin/tabel_penyewa">Penyewa Sepeda</a>
             <a class="collapse-item" href="/admin/tabel_sepeda">Sepeda</a>
-            <a class="collapse-item" href="/admin/tabel_sepeda">Sepeda</a>
             
           </div>
         </div>
@@ -151,14 +150,14 @@
                             <td>{{ $e->rute}}</td>
                             <td>{{ $e->harga_tiket}}</td>
                             <td>
-                                <a href="/admin/hapus/{{ $e->id }}" class="btn btn-primary">Hapus</a>
-                                <a href="/admin/editevent/{{ $e->id }}" class="btn btn-primary">Edit</a>
+                                <a href="/admin/hapus_event/{{ $e->id }}" class="btn btn-primary">Hapus</a>
+                                <a href="/admin/edit_event/{{ $e->id }}" class="btn btn-primary">Edit</a>
                             </td>
                         </tr>
                         @endforeach
                   </tbody>
                 </table>
-                <a href="/admin/tambahevent" class="btn btn-primary">Tambah</a>
+                <a href="/admin/tambah_event" class="btn btn-primary">Tambah</a>
             </div>
           </div>
 

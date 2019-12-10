@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Cycling Jogja Admin - Tambah Event</title>
+  <title>Cycling Jogja Admin - Edit Sepeda</title>
 
   <!-- Custom fonts for this template -->
   <link href="/admin/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -71,7 +71,7 @@
               <a class="collapse-item" href="/admin/tabel_tiket">Pemesanan Tiket</a>
               <a class="collapse-item" href="/admin/tabel_penyewa">Penyewa Sepeda</a>
               <a class="collapse-item" href="/admin/tabel_sepeda">Sepeda</a>
-                            
+              
             </div>
           </div>
         </li>
@@ -114,46 +114,37 @@
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                   <thead>
                      <tbody>
-                      <form action="/admin/store_event" method="post" enctype="multipart/form-data">
-                            {{ csrf_field() }}
+                            @foreach($sepedas as $s)
+                            <form action="/admin/update_sepeda" method="post">
+                         {{ csrf_field() }}
+                                     <input type="hidden" name="id" value="{{ $s->id }}"> <br/>
                             <div class="form-group row">
-                                    <label class="col-sm-2 col-form-label">Gambar Event</label>
+                                    <label class="col-sm-2 col-form-label">Gambar Sepeda</label>
                                     <div class="col-sm-5">
-                                      <input type="file" name="gambar_event" required="required" class="form-control">
+                                      <input type="text" required="required" name="gambar_sepeda" value="{{ $s->gambar_sepeda }}" class="form-control">
                                     </div>
                                   </div>
                                     <div class="form-group row">
-                                            <label  class="col-sm-2 col-form-label">Nama Event</label>
+                                            <label  class="col-sm-2 col-form-label">Jenis Sepeda</label>
                                             <div class="col-sm-5">
-                                              <input type="text" name="nama_event" required="required" class="form-control">
+                                                    <input type="text" required="required" name="jenis" value="{{ $s->jenis }}" class="form-control">
                                             </div>
                                           </div>
                                     <div class="form-group row">
-                                      <label  class="col-sm-2 col-form-label">Rincian Event</label>
+                                      <label  class="col-sm-2 col-form-label">Harga</label>
                                       <div class="col-sm-5">
-                                        <textarea class="form-control" name="rincian_event" required="required"></textarea>
+                                        <textarea class="form-control" required="required" name="harga">{{ $s->harga }}</textarea>
                                       </div>
                                     </div>
                                     <div class="form-group row">
-                                            <label  class="col-sm-2 col-form-label">Waktu Pelaksanaan</label>
+                                            <label  class="col-sm-2 col-form-label">Stok</label>
                                             <div class="col-sm-5">
-                                                    <input type="date" name="waktu_pelaksanaan" required="required" class="form-control">
+                                                    <input type="text" required="required" name="stock" value="{{ $s->stock}}" class="form-control">
                                             </div>
-                                          </div>
-                                     <div class="form-group row">
-                                      <label class="col-sm-2 col-form-label">Rute</label>
-                                      <div class="col-sm-5">
-                                            <textarea class="form-control" name="rute" required="required"></textarea>
-                                      </div>
-                                    </div>  
-                                    <div class="form-group row">
-                                            <label class="col-sm-2 col-form-label">Harga Tiket</label>
-                                            <div class="col-sm-5">
-                                              <input type="text" name="harga_tiket" required="required" class="form-control">
-                                            </div>
-                                          </div>   
+                                          </div> 
                                    <input type="submit" value="Simpan Data" class="btn btn-primary" >
                                   </form>
+                                  @endforeach
                       </tbody>
                   </thead>
                 </table>
