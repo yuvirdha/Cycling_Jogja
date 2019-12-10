@@ -40,23 +40,23 @@ class LoginController extends Controller
     }
 
     public function login(Request $request){
-        // Validate the form data
-         $this->validate($request, [
-           'email'   => 'required|email',
-           'password' => 'required|min:6'
-         ]);
-   
-         // Attempt to log the user in
-         if (Auth::attempt(['email' => $request->email, 'password' => $request->password], $request->remember)) {
-           // if successful, then redirect to their intended location
-           session(['key' => $request->email]);
-           return redirect()->intended(route('login'));
-         }
-         else {
-   
-           // if unsuccessful, then redirect back to the login with the form data;
-         return redirect()->back()->with('alert','Password atau Email, Salah !')->withInput($request->only('email', 'remember'));
-   
-         }
-     }
+      // Validate the form data
+       $this->validate($request, [
+         'email'   => 'required|email',
+         'password' => 'required|min:6'
+       ]);
+ 
+       // Attempt to log the user in
+       if (Auth::attempt(['email' => $request->email, 'password' => $request->password], $request->remember)) {
+         // if successful, then redirect to their intended location
+         session(['key' => $request->email]);
+         return redirect()->intended(route('login'));
+       }
+       else {
+ 
+         // if unsuccessful, then redirect back to the login with the form data;
+       return redirect()->back()->with('alert','Password atau Email, Salah !')->withInput($request->only('email', 'remember'));
+ 
+       }
+   }
 }

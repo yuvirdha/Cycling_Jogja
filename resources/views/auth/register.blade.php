@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
+<div class="container py-5">
     <div class="card bg-light"  style="background-color:#F38230 !important">
         <article class="card-body mx-auto" style="max-width: 400px;">
             <h4 class="card-title mt-5 text-center">Buat Akun</h4>
