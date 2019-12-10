@@ -7,8 +7,7 @@
               <div class="profile-sidebar">
                 <!-- SIDEBAR USERPIC -->
                 <div class="profile-userpic">
-               
-                 <img width="150px" src="{{ url('/images/'. Auth::user()->gambarprofil) }}" class="img-responsive" alt="">
+                  <img src="https://static.vix.com/es/sites/default/files/styles/1x1/public/b/brad-pitt-10.jpg" class="img-responsive" alt="">
                 </div>
                 <!-- END SIDEBAR USERPIC -->
                 <!-- SIDEBAR USER TITLE -->
