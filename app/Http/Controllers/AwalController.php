@@ -15,6 +15,7 @@ class AwalController extends Controller
     public function index()
     {
         $event = DB::table('events')->get();
+        
         return view('welcome',compact('event'));
     }
 

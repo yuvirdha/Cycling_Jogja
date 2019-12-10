@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Event;
 use Illuminate\Http\Request;
 use DB;
+use Auth;
 
 class EventController extends Controller
 {
@@ -16,9 +17,19 @@ class EventController extends Controller
     public function index()
     {
         $event = DB::table('events')->get();
-        return view('homepage.index',compact('event'));
+        $user = Auth::user();
+
+        // print_r($user);
+        // die;
+
+        return view('homepage.index',compact('event','user'));
     }
 
+    public function update_profil(Request $request){
+        $request->user()->update(
+        $request->all()
+    );
+    }
     /**
      * Show the form for creating a new resource.
      *
