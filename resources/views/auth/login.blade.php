@@ -7,14 +7,14 @@
                 <form class="login100-form validate-form" method="POST" action="{{ route('login') }}">
                     @csrf
 					<span class="login100-form-title p-b-43">
-						Login to continue
+						Masuk
                     </span>
 					
 					
 					<div for="email" class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
 						<input class="input100" id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
 						<span class="focus-input100"></span>
-                        <span class="label-input100">{{ __('E-Mail') }}</span>
+                        <span class="label-input100">{{ __('Email') }}</span>
                         @error('email')
                                 <span class="invalid-feedback" role="alert">
                                    <strong>{{ $message }}</strong>
@@ -26,7 +26,7 @@
 					<div for="password" class="wrap-input100 validate-input" data-validate="Password is required">
 						<input class="input100" id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
 						<span class="focus-input100"></span>
-                        <span class="label-input100">{{ __('Password') }}</span>
+                        <span class="label-input100">{{ __('Kata sandi') }}</span>
                         @error('password')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
@@ -39,14 +39,14 @@
 						<div class="contact100-form-checkbox">
 							<input class="input-checkbox100" id="remember" type="checkbox" name="remember-me" {{ old('remember') ? 'checked' : '' }}>
 							<label class="label-checkbox100" for="remember">
-                                 {{ __('Remember Me') }}
+                                 {{ __('Ingat saya') }}
 							</label>
 						</div>
 
 						<div>
                             @if (Route::has('password.request'))
 							<a href="{{ route('password.request') }}" class="txt1">
-                                {{ __('Forgot Your Password?') }}
+                                {{ __('Lupa kata sandi?') }}
                             </a>
                             @endif
 						</div>
@@ -54,14 +54,14 @@
                     
 					<div class="container-login100-form-btn">
 						<button class="login100-form-btn" type="submit">
-                             {{ __('Login') }}
+                             {{ __('Masuk') }}
 						</button>
 					</div>
 					
 					<div class="text-center p-t-46 p-b-20">
                         @if (Route::has('register'))
                             <a class="txt2" href="{{ route('register') }}">
-                                {{ __('or sign up here') }}
+                                {{ __('atau daftar di sini') }}
                             </a>
                         @endif
 					</div>
