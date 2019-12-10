@@ -1,4 +1,6 @@
-<div class="container">
+
+<body>
+  <div class="container">
         <div class="container">
             <div class="row profile">
             <div class="col-md-3">
@@ -24,6 +26,9 @@
 
         
                 {{-- yang baru --}}
+                
+
+
                 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 
                     <div class="modal-dialog" role="document">
@@ -41,6 +46,18 @@
                                 @csrf
 
                           <div class="modal-body">
+                              <div class="form-group">
+                                  <div class="avatar-upload">
+                                      <div class="avatar-edit">
+                                          <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
+                                          <label for="imageUpload"></label>
+                                      </div>
+                                      <div class="avatar-preview">
+                                          <div id="imagePreview" style="background-image: url(http://i.pravatar.cc/500?img=7);">
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
                           
 
                             <div class="form-group">
