@@ -8,8 +8,14 @@
                     @csrf
 					<span class="login100-form-title p-b-43">
 						Masuk
-                    </span>
+					</span>
 					
+					@if ($message = Session::get('alert'))
+						<div class="alert alert-danger alert-dismissible fade show">
+							<button type="button" class="close" data-dismiss="alert">×</button> 
+							<strong>{{ $message }}</strong>
+						</div>
+                	@endif
 					
 					<div for="email" class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
 						<input class="input100" id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
