@@ -32,10 +32,11 @@
   @include('include.profil')
   @include('include.icongrid')
 
-  @include('include.sewasepeda')
+  @include('include.logoutmodal')
   @include('include.signup')
   @include('include.footer')
-
+  @include('include.sewasepeda')
+  
   <!-- Bootstrap core JavaScript -->
   <script src="{{url('vendor/jquery/jquery.min.js')}}"></script>
   <script src="{{url('vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
