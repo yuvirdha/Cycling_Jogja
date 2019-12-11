@@ -46,9 +46,8 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
-<body>  
-       
-    @yield('content')
+<body style="background-color:#F38230" > 
 
+        @yield('content')
 </body>
 </html>

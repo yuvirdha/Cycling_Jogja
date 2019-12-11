@@ -1,9 +1,11 @@
 @extends('layouts.app')
 
 @section('content')
+
+<div class="limiter">
 <div class="container py-5">
-    <div class="card bg-light"  style="background-color:#F38230 !important">
-        <article class="card-body mx-auto" style="max-width: 400px;">
+    <div class="card bg-light mx-5">
+        <article class="card-body mx-5" style="max-width: 500px;">
             <h4 class="card-title mt-5 text-center">Buat Akun</h4>
             <p class="text-center">Mulai dengan akun gratismu!</p>
 
@@ -118,7 +120,7 @@
 
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
+                                <button type="submit" class="btn btn-primary" style="background-color:#F38230;border-color:#F38230">
                                     {{ __('Register') }}
                                 </button>
                             </div>
@@ -128,5 +130,6 @@
             </div>
         </div>
     </div>
+</div>
 </div>
 @endsection

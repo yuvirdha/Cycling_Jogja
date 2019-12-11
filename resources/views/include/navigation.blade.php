@@ -50,7 +50,7 @@
 
                           <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown" data-toggle="modal" data-target="#logoutModal">
                               <a class="dropdown-item">
-                                  {{ __('Logout') }}
+                                  {{ __('Keluar') }}
                               </a>
                           </div>
 

@@ -1,9 +1,8 @@
 
-<body>
-  <div class="container">
         <div class="container">
-            <div class="row profile">
+          <div class="row">
             <div class="col-md-3">
+              <div class="row profile">
               <div class="profile-sidebar">
                 <!-- SIDEBAR USERPIC -->
                 <div class="profile-userpic">
@@ -128,7 +127,9 @@
                       </div>
                     </div>
                   </div>
-
-
+                </div>
               </div>
             </div>
+        </div>
+  
+    
