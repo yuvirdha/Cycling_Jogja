@@ -48,21 +48,27 @@
     $humidity_current = $forecast->currently->humidity*100;
     ?>
 
-    <div class="container">
-      <div class="row">
-        <div class="car p-4">
-        <h2>CURRENT FORECAST</h2>
-        <br>
 
-        <h3 class="display-2"><?php echo $loc_current;?></h3>
-        <pclass="display-2"><?php echo $icon;?></p>
-        <h3 class="display-2"><?php echo $temperature_current;?> &deg;</h3>
-        <h4 class="display-2"><?php echo $summary_current;?></h4>
-        <h4 class="display-2">Humidity : <?php echo $humidity_current;?></h4>
-        <h4 class="display-2">Wind Speed : <?php echo $windspeed_current;?><abbr title="miles per hour">MPH</abbr></h4>
-        </div>  
+
+<section class="showcase">
+    <div class="container-fluid p-0">
+      <div class="row no-gutters">
+
+        <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/bg-showcase-1.jpg');"></div>
+        <div class="col-lg-6 order-lg-1 my-auto showcase-text" style="background: linear-gradient(#f38230, #f33030);">
+          <h2 style="color:white">Cuaca Hari Ini</h2>
+          <p style="color:white" class="lead mb-0"><?php echo $loc_current;?></p>
+          <p style="color:white" class="lead mb-0"><?php echo $icon;?></p>
+          <font style="color:white" size="+7"><?php echo $temperature_current;?> &deg;</font>
+          <h4 style="color:white" class="lead mb-0"><?php echo $summary_current;?></h4>
+          <h4 style="color:white" class="lead mb-0">Kelembapan: <?php echo $humidity_current;?></h4>
+          <h4 style="color:white" class="lead mb-0">Kecepatan Angin: <?php echo $windspeed_current;?><abbr title="miles per hour">MPH</abbr></h4>
+        </div>
       </div>
-      </div>
+    </div>
+    </section>
+
+
 
 
 

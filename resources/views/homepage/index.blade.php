@@ -37,9 +37,7 @@
 
         @foreach($event as $e)
         <div class="col-md-9">
-                <div class="profile-content">
-                    <h3>Agenda Cycling
-                      </h3>
+                <div class="container">
                     <div class="row">
                     <div class="card mb-4">
                         <img class="card-img-top" src="{{ url('/images/'.$e->gambar_event) }}" alt="Card image cap">

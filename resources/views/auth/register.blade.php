@@ -13,10 +13,7 @@
                     <form method="POST" action="{{ route('register') }}" enctype="multipart/form-data">
                         @csrf
                         <div class="form-group input-group">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text"> <i class="fa fa-user" ></i> </span>
-                                 </div>
-                                <input id="gambarprofil" type="file" class="form-control @error('gambarprofil') is-invalid @enderror" name="gambarprofil" value="{{ old('gambarprofil') }}" required autocomplete="gambarprofil" autofocus>
+                                <input id="gambarprofil" type="file" class="avatar-upload @error('gambarprofil') is-invalid @enderror" name="gambarprofil" value="{{ old('gambarprofil') }}" required autocomplete="gambarprofil" autofocus>
 
                                 @error('gambarprofil')
                                     <span class="invalid-feedback" role="alert">
