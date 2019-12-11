@@ -62,7 +62,7 @@
 
                             <div class="form-group">
                               <label for="nama" class="col-form-label">Nama:</label>
-                              <input type="text" class="form-control @error('nama') is-invalid @enderror" name="nama" value="{{ $user->nama }}" autocomplete="nama" autofocus>
+                              <input type="text" class="form-control @error('nama') is-invalid @enderror" name="nama" value="{{ Auth::user()->nama }}" autocomplete="nama" autofocus>
 
                               @error('nama')
                                   <span class="invalid-feedback" role="alert">
@@ -86,7 +86,7 @@
                       
                                   <div class="form-group">
                                       <label for="nomor_hp" class="col-form-label">Nomor Telepon:</label>
-                                      <input type="text" class="form-control @error('nomor_hp') is-invalid @enderror" name="nomor_hp" value="{{ $user->nomor_hp }}" autocomplete="nomor_hp" autofocus>
+                                      <input type="text" class="form-control @error('nomor_hp') is-invalid @enderror" name="nomor_hp" value="{{ Auth::user()->nomor_hp }}" autocomplete="nomor_hp" autofocus>
 
                                       @error('nomor_hp')
                                           <span class="invalid-feedback" role="alert">
@@ -97,7 +97,7 @@
 
                                     <div class="form-group">
                                         <label for="tanggal_lahir" class="col-form-label">Tanggal Lahir</label>
-                                        <input type="date" class="form-control @error('tanggal_lahir') is-invalid @enderror" name="tanggal_lahir" value="{{ $user->tanggal_lahir }}" autocomplete="tanggal_lahir" autofocus>
+                                        <input type="date" class="form-control @error('tanggal_lahir') is-invalid @enderror" name="tanggal_lahir" value="{{ Auth::user()->tanggal_lahir }}" autocomplete="tanggal_lahir" autofocus>
 
                                         @error('tanggal_lahir')
                                             <span class="invalid-feedback" role="alert">
@@ -108,7 +108,7 @@
 
                                       <div class="form-group">
                                           <label for="email" class="col-form-label">Email:</label>
-                                          <input type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ $user->email }}" autocomplete="email">
+                                          <input type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ Auth::user()->email }}" autocomplete="email">
 
                                           @error('email')
                                               <span class="invalid-feedback" role="alert">
