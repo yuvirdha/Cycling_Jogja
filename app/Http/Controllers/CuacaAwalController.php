@@ -15,7 +15,7 @@ class CuacaAwalController extends Controller
      */
     public function index()
     {
-        return view('cuacawelcome');
+        return view('cuaca');
     }
 
     /**

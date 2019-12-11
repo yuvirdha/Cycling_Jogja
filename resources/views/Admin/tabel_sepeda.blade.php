@@ -119,6 +119,7 @@
                             <th>Jenis</th>
                             <th>Harga</th>
                             <th>Stok</th>
+                            <th>Update</th>
                     </tr>
                   </thead>
                   <tfoot>
@@ -128,28 +129,29 @@
                             <th>Jenis</th>
                             <th>Harga</th>
                             <th>Stok</th>
+                            <th>Update</th>
                     </tr>
                   </tfoot>
                   <tbody>
                   <?php
                     $no=1;
                   ?>
-                        @foreach($sepeda as $s)
+                        @foreach($sepedas as $s)
                         <tr>
                             <td>{{$no++}}</td>
-                            <td><img width="150px" src="{{ url('/data_file/'.$e->gambar_sepeda) }}"></td>
+                            <td><img width="150px" src="{{ url('/images/'.$s->gambar_sepeda) }}"></td>
                             <td>{{ $s->jenis}}</td>
                             <td>{{ $s->harga}}</td>
                             <td>{{ $s->stock}}</td>
                             <td>
-                                <a href="/admin/hapussepeda/{{ $s->id }}" class="btn btn-primary">Hapus</a>
-                                <a href="/admin/editsepeda/{{ $s->id }}" class="btn btn-primary">Edit</a>
+                                <a href="/admin/hapus_sepeda/{{ $s->id }}" class="btn btn-primary">Hapus</a>
+                                <a href="/admin/edit_sepeda/{{ $s->id }}" class="btn btn-primary">Edit</a>
                             </td>
                         </tr>
                         @endforeach
                   </tbody>
                 </table>
-                <a href="/admin/tambahsepeda" class="btn btn-primary">Tambah</a>
+                <a href="/admin/tambah_sepeda" class="btn btn-primary">Tambah</a>
             </div>
           </div>
 

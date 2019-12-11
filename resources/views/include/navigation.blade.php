@@ -9,7 +9,7 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav text-uppercase ml-auto">
             <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#services">Beranda</a>
+                <a class="nav-link js-scroll-trigger" href="/homepage">Beranda</a>
               </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#services">Tentang</a>
@@ -48,17 +48,12 @@
                               {{ Auth::user()->nama }} <span class="caret"></span>
                           </a>
 
-                          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                              <a class="dropdown-item" href="{{ route('logout') }}"
-                                 onclick="event.preventDefault();
-                                               document.getElementById('logout-form').submit();">
+                          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown" data-toggle="modal" data-target="#logoutModal">
+                              <a class="dropdown-item">
                                   {{ __('Logout') }}
                               </a>
-
-                              <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                  @csrf
-                              </form>
                           </div>
+
                       </li>
                   @endguest
               </ul>
