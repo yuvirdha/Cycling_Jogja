@@ -62,10 +62,10 @@
     </div>
     
 </div>
-
-  @include('include.upcommingevent')
-  @include('include.signup')
-  @include('include.footer')
+@include('include.upcommingevent')
+@include('include.signup')
+@include('include.footer')
+@include('include.logoutmodal')
 
   <!-- Bootstrap core JavaScript -->
   <script src="{{url('vendor/jquery/jquery.min.js')}}"></script>
