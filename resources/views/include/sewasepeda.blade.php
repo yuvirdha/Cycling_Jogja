@@ -1,7 +1,7 @@
-
-@foreach($sepedas as $s)
+<br>
 <div class="container">
         <div class="row">
+            @foreach($sepedas as $s)
             <div class="col-md-4 mb-5">
                 <div class="card h-100">
                   <img class="card-img-top" width="150px" src="{{ url('/images/'.$s->gambar_sepeda) }}" alt="Card image cap">
@@ -17,7 +17,7 @@
                        </td>
                        <td>:</td>
                        <td>
-                           <p class="card-text">{{ $s->stock}}</p>
+                           <p class="card-text"> {{ $s->stock}}</p>
                        </td>
                       </tr>
                       <tr>
@@ -29,7 +29,7 @@
                             </td>
                             <td>:</td>
                        <td>
-                           <p class="card-text">{{ $s->harga}}</p>
+                           <p class="card-text"> {{ $s->harga}}</p>
                        </td>
                       </tr>
                     </table>
@@ -37,9 +37,8 @@
                   <div class="card-footer">
                      <a href="/pemesanansepeda/{{ $s->id}}" class="btn btn-primary" style="background-color:#F38230; border-color:#F38230">Pesan</a>
                   </div>
-         
                 </div>
-              </div>
-              @endforeach
-           </div>
-           </div>
+            </div>
+            @endforeach
+        </div>
+</div>

@@ -32,6 +32,7 @@
 
          <section class="testimonials text-center bg-light">
             <div class="container">
+              <br>
               <h2 class="mb-5">Tim Oracle</h2>
               <div class="row">
                 <div class="col-lg-3">
@@ -65,4 +66,5 @@
               </div>
             </div>
           </section>
-     </div>
+      </div>
+    </div>
