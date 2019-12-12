@@ -51,6 +51,7 @@
 
 
 <section class="showcase">
+  <div class="container">
     <div class="container-fluid p-0">
       <div class="row no-gutters">
 
@@ -66,6 +67,7 @@
         </div>
       </div>
     </div>
+  </div>
     </section>
 
 
