@@ -37,14 +37,13 @@
        
         <div class="col-md-12">
                 <div class="profile-content">
-                    <h3>Pemesanan Tiket
+                    <h3>Pemesanan Sepeda
                       </h3>
                     <div class="row">
                     <div class="card mb-4">
-                        <img class="card-img-top" src="{{ url('/images/'.$event[0]->gambar_event) }}" alt="Card image cap">
+                        <img class="card-img-top" src="{{ url('/images/'.$sepeda[0]->gambar_sepeda) }}" alt="Card image cap">
                         <div class="card-body">
-                          <h2 class="card-title">{{ $event[0]->nama_event}}</h2>
-                          <p class="card-text">{{ $event[0]->waktu_pelaksanaan}}</p>
+                          <h2 class="card-title">Merk Sepeda :{{ $sepeda[0]->jenis}}</h2>
                           <div class="features-icons-item mx-auto mb-0 mb-lg-3">
                               <div class="features-icons-icon d-flex">
                                 <table>
@@ -53,20 +52,15 @@
                                    <td>:</td>
                                     <td><h6>{{$user[0]->nama}}</h6></td>
                                   </tr>
-                                  <tr>  
-                                      <td><h6>No Telepon</h6></td>
-                                      <td>:</td>
-                                      <td><h6>{{$user[0]->nomor_hp}}</h6></td>
-                                    </tr>
                                     <tr>  
-                                        <td><h6>Harga Tiket</h6></td>
+                                        <td><h6>Harga </h6></td>
                                         <td>:</td>
-                                        <td><h6>{{ $event[0]->harga_tiket}}</h6></td>
+                                        <td><h6>{{ $sepeda[0]->harga}}</h6></td>
                                       </tr>
                                 </table>
                               </div>
                           <a href="#" class="btn btn-primary" style="background-color:#F38230; border-color:#F38230">Batalkan</a>
-                            <a href="/pesan_tiket/{{$event[0]->id}}" class="btn btn-primary" style="background-color:#F38230; border-color:#F38230">Pesan</a>
+                            <a href="/pesan_sepeda/{{$sepeda[0]->id}}" class="btn btn-primary" style="background-color:#F38230; border-color:#F38230">Pesan</a>
                         </div>
                       </div>
                 </div>

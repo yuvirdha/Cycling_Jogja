@@ -62,6 +62,36 @@
     </div>
     
 </div>
+
+
+<div class="container">
+      <div class="row">
+        <div class="col-md-12">
+            <table width="100%" class="Table table-striped">
+                <tr>
+                  <td>No</td>
+                  <td>Nama</td>
+                  <td>Jenis Sepeda</td>
+                  <td>Token</td>
+                </tr>
+                <?php
+                $no=1
+                ?>
+                @foreach($tiketsepeda as $datas)
+                <tr>
+                   <td>{{$no++}}</td>
+                   <td>{{$datas->nama}}</td>
+                   <td>{{$datas->jenis}}</td>
+                   <td>{{$datas->token}}</td>
+                 </tr>
+                 @endforeach
+               </table>
+        </div>  
+      </div>
+      </div>
+    </div>
+    
+</div>
 @include('include.upcommingevent')
 @include('include.signup')
 @include('include.footer')

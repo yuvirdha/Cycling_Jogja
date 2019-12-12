@@ -30,8 +30,12 @@ Route::get('/cuaca', 'CuacaAwalController@index');
 Route::get('/sewasepedawelcome', 'SewaSepedaController@index');
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/homepage', 'EventController@index')->name('user.homepage');
+
 Route::get('/pemesanan/{id}', 'PemesananController@index');
 Route::get('/pesan_tiket/{id_event}', 'PemesananController@store');
+
+Route::get('/pemesanansepeda/{id}', 'PemesananSepedaController@index');
+Route::get('/pesan_sepeda/{id_sepeda}', 'PemesananSepedaController@store');
 
 Route::group(['middleware' => 'auth'], function () {
     Route::get('/editprofil', 'ProfilController@edit_profil');

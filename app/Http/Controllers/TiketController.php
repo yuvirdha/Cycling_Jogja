@@ -22,8 +22,12 @@ class TiketController extends Controller
                 ->join('users','pendaftars.id_user','=','users.id')
                 ->join('events','pendaftars.id_event','=','events.id')
                 ->get();
+        $tiketsepeda = DB::table('penyewas')->where('id_user', $user->id)
+        ->join('users','penyewas.id_user','=','users.id')
+        ->join('sepedas','penyewas.id_sepeda','=','sepedas.id')
+        ->get();
 
-        return view('tiket',compact('tiket'));
+        return view('tiket',compact('tiket','tiketsepeda'));
     }
 
     /**
