@@ -24,26 +24,28 @@ class TabelSepedaController extends Controller
 
     public function store(Request $request)
     {
-        // $this->validate($request, [
-        //     'gambar_sepeda' => 'required',        
-        // ]);
-
-        // // menyimpan data file yang diupload ke variabel $file
-        // $gambar_sepeda = $request->file('gambar_sepeda');
-
-        // $img = time()."_".$gambar_sepeda->getClientOriginalName();
-
-        //         // isi dengan nama folder tempat kemana file diupload
-        // $public = 'images';
-        // $gambar_sepeda->move($public,$img);
-
+        $this->validate($request, [
+            'gambar_sepeda' => 'required',
+        ]);
+    
+    
+    
+        // menyimpan data file yang diupload ke variabel $file
+        $gambar_sepeda = $request->file('gambar_sepeda');
+    
+        $img = time()."_".$gambar_sepeda->getClientOriginalName();
+    
+                  // isi dengan nama folder tempat kemana file diupload
+        $public = 'images';
+        $gambar_sepeda->move($public,$img);
+    
         DB::table('sepedas')->insert([
-            'gambar_sepeda' => $request->gambar_sepeda,
             'jenis' => $request->jenis,
             'harga' => $request->harga,
             'stock' => $request->stock,
-        //    'gambar_sepeda' => $img, 
+            'gambar_sepeda' => $img,
         ]);
+    
 
         return redirect('/admin/tabel_sepeda');
     }

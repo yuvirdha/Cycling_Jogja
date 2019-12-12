@@ -29,13 +29,14 @@
 <body>
   @include('include.navigation')
   @include('include.header')
-  @include('include.profil')
+
   @include('include.icongrid')
+  @include('include.sewasepeda')
 
   @include('include.logoutmodal')
   @include('include.signup')
   @include('include.footer')
-  @include('include.sewasepeda')
+  
   
   <!-- Bootstrap core JavaScript -->
   <script src="{{url('vendor/jquery/jquery.min.js')}}"></script>

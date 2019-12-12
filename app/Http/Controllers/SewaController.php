@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\Pendaftar;
 use Illuminate\Http\Request;
+use DB;
 
 class SewaController extends Controller
 {
@@ -14,7 +14,9 @@ class SewaController extends Controller
      */
     public function index()
     {
-           return view('sewa');
+            $sepedas = DB::table('sepedas')->get();
+     
+            return view('sewa', compact('sepedas'));
     }
 
     /**
