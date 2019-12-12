@@ -34,7 +34,7 @@
 
 
 
-    <div class="container">
+    {{--<div class="container">
       <div class="row">
         <div class="col-md-12">
             <table width="100%" class="Table table-striped">
@@ -44,7 +44,7 @@
                   <td>Event</td>
                   <td>Token</td>
                 </tr>
-                <?php
+                <php
                 $no=1
                 ?>
                 @foreach($tiket as $data)
@@ -61,37 +61,29 @@
       </div>
     </div>
     
-</div>
+</div>--}}
 
-
-<div class="container">
-      <div class="row">
-        <div class="col-md-12">
-            <table width="100%" class="Table table-striped">
-                <tr>
-                  <td>No</td>
-                  <td>Nama</td>
-                  <td>Jenis Sepeda</td>
-                  <td>Token</td>
-                </tr>
-                <?php
-                $no=1
-                ?>
-                @foreach($tiketsepeda as $datas)
-                <tr>
-                   <td>{{$no++}}</td>
-                   <td>{{$datas->nama}}</td>
-                   <td>{{$datas->jenis}}</td>
-                   <td>{{$datas->token}}</td>
-                 </tr>
-                 @endforeach
-               </table>
-        </div>  
-      </div>
-      </div>
+  <div class="col-md-9">
+    <div class="container">
+        <br>
+        <h2>Tiket Anda</h2>
+        @foreach($tiket as $t)
+          <div class="card">
+            <div class="card-body">{{$t->nama}}
+            <p align="right"> Harga Tiket : {{$t->harga_tiket}}</p> </div>
+            <div class="card-body bg-light text-dark">
+              <h4 class="card-title-right">{{$t->nama_event}}</h4>
+            </div>
+            <div class="card-body">Token tiket : {{$t->token}}</div>
+          </div>
+          @endforeach
+          <br>
     </div>
-    
 </div>
+
+<br>
+<br>
+
 @include('include.upcommingevent')
 @include('include.signup')
 @include('include.footer')
