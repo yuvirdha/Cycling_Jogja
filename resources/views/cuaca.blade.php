@@ -69,7 +69,8 @@
     </section>
 
 
-
+<br>
+<br>
 
 
   @include('include.upcommingevent')
