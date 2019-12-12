@@ -4,7 +4,7 @@
       <div class="col-lg-1">
       </div>
       <div class="col-lg-2">
-          <a href="/homepage">
+          <a href="/homepage"style="color:#000000;">
         <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
           <div class="features-icons-icon d-flex">
               <i class="far fa-calendar m-auto" style="color:#F38230;"></i> 
@@ -14,6 +14,7 @@
       </div>
     </a>
       <div class="col-lg-2">
+          <a href="/cuaca" style="color:#000000;">
         <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
           <div class="features-icons-icon d-flex">
               <i class="fas fa-cloud-sun m-auto" style="color:#F38230";></i>
@@ -22,6 +23,7 @@
         </div>
       </div>
       <div class="col-lg-2">
+          <a href="/tantangan" style="color:#000000;">
         <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
           <div class="features-icons-icon d-flex">
             <i class="icon-note m-auto" style="color:#F38230;"></i>
@@ -30,7 +32,7 @@
         </div>
       </div>
       <div class="col-lg-2">
-          <a href="/tiket">
+          <a href="/tiket" style="color:#000000;">
         <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
           <div class="features-icons-icon d-flex">
               <i class="fas fa-ticket-alt m-auto text primary" style="color:#F38230;"></i>
@@ -40,7 +42,7 @@
       </div>
       </a>
       <div class="col-lg-2">
-          <a href="/sewa">
+          <a href="/sewa" style="color:#000000;">
         <div class="features-icons-item mx-auto mb-0 mb-lg-3">
           <div class="features-icons-icon d-flex">
               <i class="fas fa-biking m-auto text primary" style="color:#F38230;"></i>

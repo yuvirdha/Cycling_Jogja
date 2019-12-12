@@ -30,8 +30,6 @@
   @include('include.navigation')
   @include('include.header')
   @include('include.icongrid')
-  @include('include.profil')
-
 
 
     {{--<div class="container">
@@ -63,10 +61,14 @@
     
 </div>--}}
 
-  <div class="col-md-9">
+  
     <div class="container">
+      <br>
+      <br>
+        <button type="button" class="btn btn-primary">Event</button>
+        <button type="button" class="btn btn-primary">Sepeda</button>
         <br>
-        <h2>Tiket Anda</h2>
+        
         @foreach($tiket as $t)
           <div class="card">
             <div class="card-body">{{$t->nama}}
@@ -79,7 +81,7 @@
           @endforeach
           <br>
     </div>
-</div>
+
 
 <br>
 <br>
