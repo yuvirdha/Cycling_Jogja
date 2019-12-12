@@ -120,7 +120,7 @@
                         </div>
                         <div class="modal-footer">
                           <button type="button" class="btn btn-secondary" data-dismiss="modal">Batalkan</button>
-                          <button type="submit" class="btn btn-primary">Update</button>
+                          <button type="submit" class="btn btn-primary" style="background-color: #F38230; border:#F38230">Update</button>
 
                          </form>
                         </div>

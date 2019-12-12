@@ -35,13 +35,13 @@
 
   @include('include.logoutmodal')
   @include('include.signup')
-  @include('include.footer')
   
+  @include('include.footer')
   
   <!-- Bootstrap core JavaScript -->
   <script src="{{url('vendor/jquery/jquery.min.js')}}"></script>
   <script src="{{url('vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
-
+  
 </body>
 
 </html>
