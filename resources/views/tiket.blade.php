@@ -22,6 +22,7 @@
   <link href="{{url('css/landing-page.min.css')}}" rel="stylesheet">
 <link rel="stylesheet" href="{{ asset('/css/custom.css') }}">
 
+
 <script src="https://kit.fontawesome.com/9845349ab7.js" crossorigin="anonymous"></script>
 
 </head>
@@ -30,7 +31,6 @@
   @include('include.navigation')
   @include('include.header')
   @include('include.icongrid')
-  @include('include.profil')
 
 
 
@@ -63,18 +63,17 @@
     
 </div>--}}
 
-  <div class="col-md-9">
-    <div class="container">
+<div class="container">
+   <h3>Tiket Pemesanan Event</h3>
         <br>
-        <h2>Tiket Anda</h2>
         @foreach($tiket as $t)
-          <div class="card">
-            <div class="card-body">{{$t->nama}}
-            <p align="right"> Harga Tiket : {{$t->harga_tiket}}</p> </div>
-            <div class="card-body bg-light text-dark">
-              <h4 class="card-title-right">{{$t->nama_event}}</h4>
+          <div class="tiket-card">
+            <div class="card-oren">
             </div>
-            <div class="card-body">Token tiket : {{$t->token}}</div>
+            <div class="nama-pengguna">{{$t->nama}}</div>
+            <div class="harga-tiket"> Harga Tiket : {{$t->harga_tiket}} </div>
+            <div class="nama-event">{{$t->nama_event}}</div>
+            <div class="token">{{$t->token}}</div>
           </div>
           @endforeach
           <br>
@@ -83,6 +82,31 @@
 
 <br>
 <br>
+<br>
+
+<div class="container">
+  
+  <h3>Tiket Penyewaan Sepeda</h3>
+    <br>
+    @foreach($tiketsepeda as $datas)
+      <div class="tiket-card">
+        <div class="card-oren">
+        </div>
+        <div class="nama-pengguna">{{$datas->nama}}</div>
+        <div class="harga-tiket"> Harga Sepeda : {{$datas->harga}} </div>
+        <div class="nama-event">{{$datas->jenis}}</div>
+        <div class="token">{{$datas->token}}</div>
+      </div>
+      @endforeach
+      <br>
+</div>
+</div>
+
+<br>
+<br>
+<br>
+
+
 
 @include('include.upcommingevent')
 @include('include.signup')
