@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Cycling Jogja Admin - Pemesanan Tiket</title>
+  <title>Cycling Jogja Admin - Edit Event</title>
 
   <!-- Custom fonts for this template -->
   <link href="/admin/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -104,46 +104,67 @@
           <!-- DataTales Example -->
           <div class="card shadow mb-4">
             <div class="card-header py-3">
-              <h6 class="m-0 font-weight-bold text-primary">Data Pemesanan Tiket</h6>
+              <h6 class="m-0 font-weight-bold text-primary">Form Edit Soal</h6>
             </div>
             <div class="card-body">
-                  
-                </div>
-                
+                    
               <div class="table-responsive">
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                   <thead>
-                    <tr>
-                            <th>No</th>
-                            <th>Nama Peserta</th>
-                            <th>Event yang diikuti</th>
-                            <th>No Token</th>
-                            <th>Update</th>
-                    </tr>
+                     <tbody>
+                            @foreach($soal as $so)
+                            <form action="/admin/update_soal" method="post">
+                         {{ csrf_field() }}
+                                     <input type="hidden" name="id" value="{{ $so->id }}"> <br/>
+                                     <div class="form-group row">
+                                            <label  class="col-sm-2 col-form-label">Soal</label>
+                                            <div class="col-sm-5">
+                                            <textarea class="form-control" name="soal" required="required">{{ $so->soal }}</textarea>
+                                            </div>
+                                          </div>
+                                    <div class="form-group row">
+                                      <label  class="col-sm-2 col-form-label">Opsi A</label>
+                                      <div class="col-sm-5">
+                                        <textarea class="form-control" name="opsi_a"required="required"> v{{ $so->opsi_a }}</textarea>
+                                      </div>
+                                    </div>
+                                    <div class="form-group row">
+                                      <label  class="col-sm-2 col-form-label">Opsi B</label>
+                                      <div class="col-sm-5">
+                                        <textarea class="form-control" name="opsi_b" required="required">v{{ $so->opsi_b }}</textarea>
+                                      </div>
+                                    </div>
+                                    <div class="form-group row">
+                                      <label  class="col-sm-2 col-form-label">Opsi C</label>
+                                      <div class="col-sm-5">
+                                        <textarea class="form-control" name="opsi_c" required="required">v{{ $so->opsi_c }}</textarea>
+                                      </div>
+                                    </div>
+                                    <div class="form-group row">
+                                      <label  class="col-sm-2 col-form-label">Opsi D</label>
+                                      <div class="col-sm-5">
+                                        <textarea class="form-control" name="opsi_d"required="required">{{ $so->opsi_d }}</textarea>
+                                      </div>
+                                    </div>
+                                    <div class="form-group row">
+                                      <label  class="col-sm-2 col-form-label">Jawaban Benar</label>
+                                      <div class="col-sm-5">
+                                      <select name="jawaban_benar" value="{{ $so->jawaban_benar }}" required="" >
+                                            <option value="a">A</option>
+                                            <option value="b">B</option>
+                                            <option value="c">C</option>
+                                            <option value="d">D</option>
+                                        </select>
+                                      </div>
+                                    </div>   
+                                   <input type="submit" value="Simpan Data" class="btn btn-primary" >
+                                  </form>
+                                  @endforeach
+                      </tbody>
                   </thead>
-                  <tfoot>
-                    <tr>
-                            <th>No</th>
-                            <th>Nama Peserta</th>
-                            <th>Event yang diikuti</th>
-                            <th>No Token</th>
-                            <th>Update</th>
-                    </tr>
-                  </tfoot>
-                  <tbody>
-                  <?php
-                   $no=1;
-                  ?>
-                  @foreach($pendaftars as $t)
-                <tr>
-                   <td>{{$no++}}</td>
-                   <td>{{$t->id_user}}</td>
-                   <td>{{$t->id_event}}</td>
-                   <td>{{$t->token}}</td>
-                 </tr>
-                 @endforeach
-                  </tbody>
                 </table>
+                
+              </div>
             </div>
           </div>
 
@@ -152,6 +173,7 @@
 
       </div>
       <!-- End of Main Content -->
+
       <!-- Footer -->
       @include('include.footerAd')
       <!-- End of Footer -->

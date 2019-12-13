@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Cycling Jogja Admin - Pemesanan Tiket</title>
+  <title>Cycling Jogja Admin - Tambah Event</title>
 
   <!-- Custom fonts for this template -->
   <link href="/admin/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -71,18 +71,20 @@
               <a class="collapse-item" href="/admin/tabel_tiket">Pemesanan Tiket</a>
               <a class="collapse-item" href="/admin/tabel_penyewa">Penyewa Sepeda</a>
               <a class="collapse-item" href="/admin/tabel_sepeda">Sepeda</a>
-              
+                            
             </div>
           </div>
         </li>
     
         <!-- Nav Item - Utilities Collapse Menu -->
         <li class="nav-item">
-        <a class="nav-link" href="/admin/soal">
-          <i class="fas fa-fw fa-wrench"></i>
-          <span>Buat Soal</span>
-        </a>
-      </li>
+          <a class="nav-link collapsed" href="/admin/soal" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
+            <i class="fas fa-fw fa-wrench"></i>
+            <span>Buat Soal</span>
+          </a>
+          <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+          </div>
+        </li>
     
     
         <!-- Sidebar Toggler (Sidebar) -->
@@ -104,46 +106,59 @@
           <!-- DataTales Example -->
           <div class="card shadow mb-4">
             <div class="card-header py-3">
-              <h6 class="m-0 font-weight-bold text-primary">Data Pemesanan Tiket</h6>
+              <h6 class="m-0 font-weight-bold text-primary">Form Tambah Event</h6>
             </div>
             <div class="card-body">
-                  
-                </div>
-                
+                    
               <div class="table-responsive">
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                   <thead>
-                    <tr>
-                            <th>No</th>
-                            <th>Nama Peserta</th>
-                            <th>Event yang diikuti</th>
-                            <th>No Token</th>
-                            <th>Update</th>
-                    </tr>
+                     <tbody>
+                      <form action="/admin/store_event" method="post" enctype="multipart/form-data">
+                            {{ csrf_field() }}
+                            <div class="form-group row">
+                                    <label class="col-sm-2 col-form-label">Gambar Event</label>
+                                    <div class="col-sm-5">
+                                      <input type="file" name="gambar_event" required="required" class="form-control">
+                                    </div>
+                                  </div>
+                                    <div class="form-group row">
+                                            <label  class="col-sm-2 col-form-label">Nama Event</label>
+                                            <div class="col-sm-5">
+                                              <input type="text" name="nama_event" required="required" class="form-control">
+                                            </div>
+                                          </div>
+                                    <div class="form-group row">
+                                      <label  class="col-sm-2 col-form-label">Rincian Event</label>
+                                      <div class="col-sm-5">
+                                        <textarea class="form-control" name="rincian_event" required="required"></textarea>
+                                      </div>
+                                    </div>
+                                    <div class="form-group row">
+                                            <label  class="col-sm-2 col-form-label">Waktu Pelaksanaan</label>
+                                            <div class="col-sm-5">
+                                                    <input type="date" name="waktu_pelaksanaan" required="required" class="form-control">
+                                            </div>
+                                          </div>
+                                     <div class="form-group row">
+                                      <label class="col-sm-2 col-form-label">Rute</label>
+                                      <div class="col-sm-5">
+                                            <textarea class="form-control" name="rute" required="required"></textarea>
+                                      </div>
+                                    </div>  
+                                    <div class="form-group row">
+                                            <label class="col-sm-2 col-form-label">Harga Tiket</label>
+                                            <div class="col-sm-5">
+                                              <input type="text" name="harga_tiket" required="required" class="form-control">
+                                            </div>
+                                          </div>   
+                                   <input type="submit" value="Simpan Data" class="btn btn-primary" >
+                                  </form>
+                      </tbody>
                   </thead>
-                  <tfoot>
-                    <tr>
-                            <th>No</th>
-                            <th>Nama Peserta</th>
-                            <th>Event yang diikuti</th>
-                            <th>No Token</th>
-                            <th>Update</th>
-                    </tr>
-                  </tfoot>
-                  <tbody>
-                  <?php
-                   $no=1;
-                  ?>
-                  @foreach($pendaftars as $t)
-                <tr>
-                   <td>{{$no++}}</td>
-                   <td>{{$t->id_user}}</td>
-                   <td>{{$t->id_event}}</td>
-                   <td>{{$t->token}}</td>
-                 </tr>
-                 @endforeach
-                  </tbody>
                 </table>
+                
+              </div>
             </div>
           </div>
 
@@ -152,6 +167,7 @@
 
       </div>
       <!-- End of Main Content -->
+
       <!-- Footer -->
       @include('include.footerAd')
       <!-- End of Footer -->

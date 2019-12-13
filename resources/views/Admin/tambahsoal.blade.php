@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Cycling Jogja Admin - Pemesanan Tiket</title>
+  <title>Cycling Jogja Admin - Tambah Event</title>
 
   <!-- Custom fonts for this template -->
   <link href="/admin/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -71,7 +71,7 @@
               <a class="collapse-item" href="/admin/tabel_tiket">Pemesanan Tiket</a>
               <a class="collapse-item" href="/admin/tabel_penyewa">Penyewa Sepeda</a>
               <a class="collapse-item" href="/admin/tabel_sepeda">Sepeda</a>
-              
+                            
             </div>
           </div>
         </li>
@@ -104,46 +104,64 @@
           <!-- DataTales Example -->
           <div class="card shadow mb-4">
             <div class="card-header py-3">
-              <h6 class="m-0 font-weight-bold text-primary">Data Pemesanan Tiket</h6>
+              <h6 class="m-0 font-weight-bold text-primary">Form Tambah Event</h6>
             </div>
             <div class="card-body">
-                  
-                </div>
-                
+                    
               <div class="table-responsive">
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                   <thead>
-                    <tr>
-                            <th>No</th>
-                            <th>Nama Peserta</th>
-                            <th>Event yang diikuti</th>
-                            <th>No Token</th>
-                            <th>Update</th>
-                    </tr>
+                     <tbody>
+                      <form action="/admin/store_soal" method="post" enctype="multipart/form-data">
+                            {{ csrf_field() }}
+                            <div class="form-group row">
+                                            <label  class="col-sm-2 col-form-label">Soal</label>
+                                            <div class="col-sm-5">
+                                            <textarea class="form-control" name="soal" required="required"></textarea>
+                                            </div>
+                                          </div>
+                                    <div class="form-group row">
+                                      <label  class="col-sm-2 col-form-label">Opsi A</label>
+                                      <div class="col-sm-5">
+                                        <textarea class="form-control" name="opsi_a" required="required"></textarea>
+                                      </div>
+                                    </div>
+                                    <div class="form-group row">
+                                      <label  class="col-sm-2 col-form-label">Opsi B</label>
+                                      <div class="col-sm-5">
+                                        <textarea class="form-control" name="opsi_b" required="required"></textarea>
+                                      </div>
+                                    </div>
+                                    <div class="form-group row">
+                                      <label  class="col-sm-2 col-form-label">Opsi C</label>
+                                      <div class="col-sm-5">
+                                        <textarea class="form-control" name="opsi_c" required="required"></textarea>
+                                      </div>
+                                    </div>
+                                    <div class="form-group row">
+                                      <label  class="col-sm-2 col-form-label">Opsi D</label>
+                                      <div class="col-sm-5">
+                                        <textarea class="form-control" name="opsi_d" required="required"></textarea>
+                                      </div>
+                                    </div>
+                                    <div class="form-group row">
+                                      <label  class="col-sm-2 col-form-label">Jawaban Benar</label>
+                                      <div class="col-sm-5">
+                                      <select name="jawaban_benar">
+                                            <option value="a">A</option>
+                                            <option value="b">B</option>
+                                            <option value="c">C</option>
+                                            <option value="d">D</option>
+                                        </select>
+                                      </div>
+                                    </div>
+                                   <input type="submit" value="Simpan Data" class="btn btn-primary" >
+                                  </form>
+                      </tbody>
                   </thead>
-                  <tfoot>
-                    <tr>
-                            <th>No</th>
-                            <th>Nama Peserta</th>
-                            <th>Event yang diikuti</th>
-                            <th>No Token</th>
-                            <th>Update</th>
-                    </tr>
-                  </tfoot>
-                  <tbody>
-                  <?php
-                   $no=1;
-                  ?>
-                  @foreach($pendaftars as $t)
-                <tr>
-                   <td>{{$no++}}</td>
-                   <td>{{$t->id_user}}</td>
-                   <td>{{$t->id_event}}</td>
-                   <td>{{$t->token}}</td>
-                 </tr>
-                 @endforeach
-                  </tbody>
                 </table>
+                
+              </div>
             </div>
           </div>
 
@@ -152,6 +170,7 @@
 
       </div>
       <!-- End of Main Content -->
+
       <!-- Footer -->
       @include('include.footerAd')
       <!-- End of Footer -->

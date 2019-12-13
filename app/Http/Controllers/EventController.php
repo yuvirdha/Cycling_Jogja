@@ -6,6 +6,8 @@ use App\Event;
 use Illuminate\Http\Request;
 use DB;
 use Auth;
+use Carbon;
+
 
 class EventController extends Controller
 {
@@ -16,13 +18,14 @@ class EventController extends Controller
      */
     public function index()
     {
-        $event = DB::table('events')->get();
+        $event = DB::table('events')->orderBy('waktu_pelaksanaan', 'asc')->first();
+        $events = DB::table('events')->where('waktu_pelaksanaan','<>',' {{$event->waktu_pelaksanaan}}')->get();
+        
         $user = Auth::user();
 
-        // print_r($user);
-        // die;
+        
 
-        return view('homepage.index',compact('event','user'));
+        return view('homepage.index',compact('event','user','events'));
     }
 
     public function update_profil(Request $request){

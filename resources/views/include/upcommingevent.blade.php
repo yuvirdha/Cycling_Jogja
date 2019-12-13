@@ -1,32 +1,18 @@
+
+
 <div class="container">
         <div class="row">
+        @foreach($events as $q)
            <div class="col-md-4 mb-5">
              <div class="card h-100">
-               <img class="card-img-top" src="https://www.alodiatour.com/wp-content/uploads/2018/04/Rute-Menuju-Tugu-Jogja.jpg" alt="">
+               <img class="card-img-top"src="{{ url('/images/'.$q->gambar_event) }}" alt="Card image cap">
                <div class="card-body">
-                 <h4 class="card-title">Ke Tugu, Yok!</h4>
+                 <h4 class="card-title">Ke Tugu, ok!</h4>
                  <p class="card-text">Bersepeda keliling Jogja memang seru. Banyak spot yang terlalu menarik untuk dihiraukan. Ayo, bersepeda dan jelajahi keindahannya.</p>
                </div>
              </div>
            </div>
-           <div class="col-md-4 mb-5">
-             <div class="card h-100">
-               <img class="card-img-top" src="https://tempatwisataseru.com/wp-content/uploads/2019/09/Sunset-di-Pantai-Parangtritis-via-Alodiatour.jpg" alt="">
-               <div class="card-body">
-                 <h4 class="card-title">Parangtritis Tour</h4>
-                 <p class="card-text">Bersepeda keliling Jogja memang seru. Banyak spot yang terlalu menarik untuk dihiraukan. Ayo, bersepeda dan jelajahi keindahannya.</p>
-               </div>
-             </div>
-           </div>
-           <div class="col-md-4 mb-5">
-             <div class="card h-100">
-               <img class="card-img-top" src="https://casciscus.bakbuk.id/wp-content/uploads/2018/12/Spot-Cantik-Menikmati-Senja-di-Jogja-1040x680.jpg" alt="">
-               <div class="card-body">
-                 <h4 class="card-title">Jogja Adventure</h4>
-                 <p class="card-text">Bersepeda keliling Jogja memang seru. Banyak spot yang terlalu menarik untuk dihiraukan. Ayo, bersepeda dan jelajahi keindahannya.</p>
-               </div>
-               </div>
-             </div>
+             @endforeach
            </div>
           </div>
         </div>
@@ -144,4 +130,6 @@
               </div>
             </div>
           </section>
-     </div>
+         
+      </div>
+    </div>
