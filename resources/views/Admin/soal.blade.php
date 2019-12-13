@@ -115,24 +115,24 @@
                   <thead>
                     <tr>
                             <th>No</th>
-                            <th>Gambar Event</th>
-                            <th>Nama Event</th>
-                            <th>Rincian</th>
-                            <th>Waktu Pelaksanaan</th>
-                            <th>Rute</th>
-                            <th>Harga Tiket</th>
+                            <th>Soal</th>
+                            <th>Opsi A</th>
+                            <th>Opsi B</th>
+                            <th>Opsi C</th>
+                            <th>Opsi D</th>
+                            <th>Jawaban Benar</th>
                             <th>Update</th>
                     </tr>
                   </thead>
                   <tfoot>
                     <tr>
-                            <th>No</th>
-                            <th>Gambar Event</th>
-                            <th>Nama Event</th>
-                            <th>Rincian</th>
-                            <th>Waktu Pelaksanaan</th>
-                            <th>Rute</th>
-                            <th>Harga Tiket</th>
+                    <th>No</th>
+                            <th>Soal</th>
+                            <th>Opsi A</th>
+                            <th>Opsi B</th>
+                            <th>Opsi C</th>
+                            <th>Opsi D</th>
+                            <th>Jawaban Benar</th>
                             <th>Update</th>
                     </tr>
                   </tfoot>
@@ -140,24 +140,24 @@
                   <?php
                     $no=1;
                   ?>
-                        @foreach($events as $e)
+                        @foreach($soal as $so)
                         <tr>
                             <td>{{$no++}}</td>
-                            <td><img width="150px" src="{{ url('/images/'.$e->gambar_event) }}"></td>
-                            <td>{{ $e->nama_event}}</td>
-                            <td>{{ $e->rincian_event}}</td>
-                            <td>{{ $e->waktu_pelaksanaan}}</td>
-                            <td>{{ $e->rute}}</td>
-                            <td>{{ $e->harga_tiket}}</td>
+                            <td>{{ $so->soal}}</td>
+                            <td>{{ $so->opsi_a}}</td>
+                            <td>{{ $so->opsi_b}}</td>
+                            <td>{{ $so->opsi_c}}</td>
+                            <td>{{ $so->opsi_d}}</td>
+                            <td>{{ $so->jawaban_benar}}</td>
                             <td>
-                                <a href="/admin/hapus_event/{{ $e->id }}" class="btn btn-primary">Hapus</a>
-                                <a href="/admin/edit_event/{{ $e->id }}" class="btn btn-primary">Edit</a>
+                                <a href="/admin/hapus_soal/{{ $so->id }}" class="btn btn-primary">Hapus</a>
+                                <a href="/admin/edit_soal/{{ $so->id }}" class="btn btn-primary">Edit</a>
                             </td>
                         </tr>
                         @endforeach
                   </tbody>
                 </table>
-                <a href="/admin/tambah_event" class="btn btn-primary">Tambah</a>
+                <a href="/admin/tambah_soal" class="btn btn-primary">Tambah</a>
             </div>
           </div>
 
