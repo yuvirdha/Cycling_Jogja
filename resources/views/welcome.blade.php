@@ -26,7 +26,6 @@
         @include('include.navbefsign')
         @include('include.header')
         @include('include.icongridbef')
-        @foreach($event as $e)
         <div class="container">
         <div class="col-md-0">
                 <div class="profile-content">
@@ -34,28 +33,28 @@
                       </h3>
                     <div class="row">
                     <div class="card mb-4">
-                        <img class="card-img-top" src="{{ url('/images/'.$e->gambar_event) }}" alt="Card image cap">
+                        <img class="card-img-top"src="{{ url('/images/'.$event->gambar_event) }}"alt="Card image cap">
                         <div class="card-body">
-                          <h2 class="card-title">{{ $e->nama_event}}</h2>
-                          <p class="card-text">{{ $e->rincian_event}} </p>
+                          <h2 class="card-title">{{ $event->nama_event}}</h2>
+                          <p class="card-text">{{ $event->rincian_event}} </p>
                           <div class="features-icons-item mx-auto mb-0 mb-lg-3">
                               <div class="features-icons-icon d-flex">
                                 <table>
                                   <tr>  
                                     <td><i class="far fa-calendar m-auto text primary" style="color:#F38230;"></i></td>
-                                    <td><h6>{{ $e->waktu_pelaksanaan}}</h6></td>
+                                    <td><h6>{{ $event->waktu_pelaksanaan}}</h6></td>
                                   </tr>
                                   <tr>  
                                       <td><i class="fas fa-route m-auto text primary" style="color:#F38230;"></i></td>
-                                      <td><h6>{{ $e->rute}}</h6></td>
+                                      <td><h6>{{ $event->rute}}</h6></td>
                                     </tr>
                                     <tr>  
                                         <td><i class="fas fa-ticket-alt m-auto text primary" style="color:#F38230;"></i></td>
-                                        <td><h6>{{ $e->harga_tiket}}</h6></td>
+                                        <td><h6>{{ $event->harga_tiket}}</h6></td>
                                       </tr>
                                 </table>
                               </div>
-                            <a href="/pemesanan/{{ $e->id}}" class="btn btn-primary" style="background-color:#F38230; border-color:#F38230">Gabung</a>
+                            <a href="/pemesanan/{{ $event->id}}" class="btn btn-primary" style="background-color:#F38230; border-color:#F38230">Gabung</a>
                         </div>
                       </div>
                 </div>
@@ -63,7 +62,6 @@
       </div>
     </div>
 </div>
-    @endforeach
       
         @include('include.upcommingevent')
         @include('include.footer')

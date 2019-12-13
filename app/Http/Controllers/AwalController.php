@@ -14,9 +14,14 @@ class AwalController extends Controller
      */
     public function index()
     {
-        $event = DB::table('events')->get();
+        $event = DB::table('events')->orderBy('waktu_pelaksanaan', 'asc')->first();
+        $events = DB::table('events')->where('waktu_pelaksanaan','!=','{{$event->waktu_pelaksanaan}}')
+                    ->orderBy('waktu_pelaksanaan', 'asc')->get();
+             
+
+        return view('welcome',compact('event','events'));
+
         
-        return view('welcome',compact('event'));
     }
 
     /**
