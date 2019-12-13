@@ -72,4 +72,8 @@ Route::post('/admin/update_sepeda','TabelSepedaController@update');
 Route::get('/admin/hapus_sepeda/{id}','TabelSepedaController@hapus');
 
 Route::get('/admin/soal','SoalController@index');
-oute::get('/admin/tambah_sepeda','TabelSepedaController@create');
+Route::get('/admin/tambah_soal','SoalController@create');
+Route::post('/admin/store_soal','SoalController@store');
+Route::get('/admin/edit_soal/{id}','SoalController@edit');
+Route::post('/admin/update_soal','SoalController@update');
+Route::get('/admin/hapus_soal/{id}','SoalController@hapus');

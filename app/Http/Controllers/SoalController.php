@@ -19,13 +19,13 @@ class SoalController extends Controller
 public function create()
 {
 
-	return view('Admin.buat_soal');
+	return view('Admin.tambahsoal');
 
 }
 public function store(Request $request)
 {
 
-	DB::table('events')->insert([
+	DB::table('soals')->insert([
 		'soal' => $request->soal,
         'opsi_a' => $request->opsi_a,
         'opsi_b' => $request->opsi_b,
@@ -36,7 +36,7 @@ public function store(Request $request)
 
 	// die;
 
-	return redirect('Admin.soal');
+	return redirect('/admin/soal');
 
 }
 public function edit($id)
@@ -62,7 +62,7 @@ public function update(Request $request)
 		'jawaban_benar' => $request->jawaban_benar,
 	]);
 
-	return redirect('Admin.soal');
+	return redirect('/admin/soal');
 }
 
 public function hapus($id)
@@ -70,6 +70,6 @@ public function hapus($id)
 
 	DB::table('soals')->where('id',$id)->delete();
 		
-	return redirect('Admin.soal');
+	return redirect('/admin/soal');
 }
 }
