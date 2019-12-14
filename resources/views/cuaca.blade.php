@@ -74,7 +74,7 @@
 <br>
 <br>
 
-
+  @include('include.upcommingevent')
   @include('include.signup')
   @include('include.footer')
   @include('include.logoutmodal')

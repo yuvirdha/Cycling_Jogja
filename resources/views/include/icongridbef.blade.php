@@ -4,7 +4,7 @@
       <div class="col-lg-1">
       </div>
       <div class="col-lg-2">
-          <a href="/homepage"style="color:#000000;">
+          <a href="/"style="color:#000000;">
         <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
           <div class="features-icons-icon d-flex">
               <i class="far fa-calendar m-auto" style="color:#F38230;"></i> 

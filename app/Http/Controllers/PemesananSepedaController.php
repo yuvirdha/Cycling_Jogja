@@ -17,13 +17,16 @@ class PemesananSepedaController extends Controller
     {
         $user = Auth::user(); 
         //print($user->id);
+        $events = DB::table('events')->where('waktu_pelaksanaan','!=','{{$event->waktu_pelaksanaan}}')
+        ->orderBy('waktu_pelaksanaan', 'asc')->get();
+ 
 
         $sepeda = DB::table('sepedas')->where('id', $id)->get();
         $user = DB::table('users')->where('id', $user->id)->get();
 
         
 
-        return view('pemesanansepeda',compact('sepeda','user'));
+        return view('pemesanansepeda',compact('sepeda','user','events'));
     }
 
     /**

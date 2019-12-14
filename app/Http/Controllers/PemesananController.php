@@ -15,6 +15,10 @@ class PemesananController extends Controller
      */
     public function index($id)
     {
+        $events = DB::table('events')->where('waktu_pelaksanaan','!=','{{$event->waktu_pelaksanaan}}')
+        ->orderBy('waktu_pelaksanaan', 'asc')->get();
+ 
+
         $user = Auth::user(); 
         //print($user->id);
 
@@ -25,7 +29,7 @@ class PemesananController extends Controller
         // print_r($user);
         // die;
 
-        return view('pemesanan',compact('event','user'));
+        return view('pemesanan',compact('event','user','events'));
     }
 
     /**

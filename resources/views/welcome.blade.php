@@ -63,7 +63,7 @@
     </div>
 </div>
       
-        @include('include.upcommingevent')
+        @include('include.upcommingeventbef')
         @include('include.footer')
 
             </div>

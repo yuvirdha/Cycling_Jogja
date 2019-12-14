@@ -15,7 +15,10 @@ class CuacaAwalController extends Controller
      */
     public function index()
     {
-        return view('cuaca');
+        $events = DB::table('events')->where('waktu_pelaksanaan','!=','{{$event->waktu_pelaksanaan}}')
+                    ->orderBy('waktu_pelaksanaan', 'asc')->get();
+             
+        return view('cuaca', compact('events'));
     }
 
     /**

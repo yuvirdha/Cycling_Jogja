@@ -15,7 +15,10 @@ class SewaSepedaController extends Controller
     public function index()
     {
         $sepedas = DB::table('sepedas')->get();
-        return view('sewasepedawelcome', compact('sepedas'));
+        $events = DB::table('events')->where('waktu_pelaksanaan','!=','{{$event->waktu_pelaksanaan}}')
+        ->orderBy('waktu_pelaksanaan', 'asc')->get();
+ 
+        return view('sewasepedawelcome', compact('sepedas','events'));
     }
 
     /**

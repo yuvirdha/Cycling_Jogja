@@ -73,7 +73,7 @@
 
 <br>
 <br>
-
+      @include('include.upcommingeventbef')
         @include('include.footer')
 
   <!-- Bootstrap core JavaScript -->

@@ -59,7 +59,7 @@
                                       </tr>
                                 </table>
                               </div>
-                          <a href="#" class="btn btn-primary" style="background-color:#F38230; border-color:#F38230">Batalkan</a>
+                          <a href="/sewa" class="btn btn-primary" style="background-color:#F38230; border-color:#F38230">Batalkan</a>
                             <a href="/pesan_sepeda/{{$sepeda[0]->id}}" class="btn btn-primary" style="background-color:#F38230; border-color:#F38230">Pesan</a>
                         </div>
                       </div>
