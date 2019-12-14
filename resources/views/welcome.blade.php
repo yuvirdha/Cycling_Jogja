@@ -54,7 +54,7 @@
                                       </tr>
                                 </table>
                               </div>
-                            <a href="/pemesanan/{{ $event->id}}" class="btn btn-primary" style="background-color:#F38230; border-color:#F38230">Gabung</a>
+                            <a href="/login" class="btn btn-primary" style="background-color:#F38230; border-color:#F38230">Gabung</a>
                         </div>
                       </div>
                 </div>

@@ -2,10 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Event;
 use Illuminate\Http\Request;
 use DB;
 
-class SewaSepedaController extends Controller
+class CuacaController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,8 +15,7 @@ class SewaSepedaController extends Controller
      */
     public function index()
     {
-        $sepedas = DB::table('sepedas')->get();
-        return view('sewasepedawelcome', compact('sepedas'));
+        return view('cuacawelcome');
     }
 
     /**
@@ -34,17 +34,17 @@ class SewaSepedaController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    // public function store(Request $request)
-    // {
-    //     //
-    // }
+    public function store(Request $request)
+    {
+        //
+    }
 
-    // /**
-    //  * Display the specified resource.
-    //  *
-    //  * @param  \App\Event  $event
-    //  * @return \Illuminate\Http\Response
-    //  */
+    /**
+     * Display the specified resource.
+     *
+     * @param  \App\Event  $event
+     * @return \Illuminate\Http\Response
+     */
     // public function show(Event $event)
     // {
     //     //

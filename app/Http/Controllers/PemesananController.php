@@ -38,7 +38,7 @@ class PemesananController extends Controller
         $user = Auth::user();
         $id_user =  $user->id;
 
-        $token = rand(10,100);
+        $token = rand(100000000, 99999999);
 
 	DB::table('pendaftars')->insert([
         'id_user' => $id_user,

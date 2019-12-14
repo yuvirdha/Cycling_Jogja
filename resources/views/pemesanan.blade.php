@@ -76,7 +76,6 @@
     
 </div>
 
-@include('include.upcommingevent')
 
   <!-- Call to Action -->
   @include('include.signup')
