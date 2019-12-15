@@ -19,7 +19,7 @@
                 <!-- SIDEBAR BUTTONS -->
                 <div class="profile-userbuttons">
                   <button type="button" class="btn btn-success btn-sm">Kontribusi</button>
-            <button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Edit Profil</button></a>
+                  <button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Edit Profil</button></a>
                 </div>
                 
 
@@ -130,6 +130,6 @@
                 </div>
               </div>
             </div>
-        </div>
+          </div>
   
     

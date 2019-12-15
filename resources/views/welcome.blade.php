@@ -62,6 +62,8 @@
       </div>
     </div>
 </div>
+
+
       
         @include('include.upcommingevent')
         @include('include.footer')
