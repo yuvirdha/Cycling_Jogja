@@ -69,11 +69,14 @@
     </div>
   </div>
     </section>
+
+
+    <div class = "container">
     <div class="row">
       <?php
         $i=0;
         
-        foreach($forecast->daily->data as $day);
+        foreach($forecast->daily->data as $day):
         $average_temp = (round($day->temperatureHigh)+round($day->temperatureLow))/2;
       ?>
       <div class="col-12 cold-md-3">
@@ -82,14 +85,14 @@
             <?php echo date("l", $day->time);?>
           </h2>
           <h3 class="display-4">
-            <?php echo ($average_temp);?>
+            <?php echo ($average_temp);?> &deg;
           </h3>
           <div class="d-flex justify-content-between">
               <p class="lead">
-                  Hi<?php echo round($day->temperatureHigh); ?>&deg;
+                  Hi <?php echo round($day->temperatureHigh); ?>&deg;
               </p>
               <p class="lead">
-                Hi<?php echo round($day->temperatureLow); ?>&deg;
+                Low  <?php echo round($day->temperatureLow); ?>&deg;
             </p>
           </div>
           <p class="lead m-0">
@@ -97,14 +100,12 @@
           </p>
         </div>
       </div>
-    </div>
     <?php
-
     $i++;
     if($i==5) break;
   endforeach;
     ?>
-
+    </div>
 
 <br>
 <br>
