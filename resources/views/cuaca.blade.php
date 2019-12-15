@@ -36,9 +36,9 @@
     $api_url='https://api.darksky.net/forecast/d6f661c85e106becf4cbd58a9047b3d3/'.$coordinates;
     $forecast = json_decode(file_get_contents($api_url));
 
-    echo '<pre>';
-    print_r($forecast);
-    echo '<pre>';
+    // echo '<pre>';
+    // print_r($forecast);
+    // echo '<pre>';
 
     $loc_current = $forecast->timezone;
     $temperature_current =round( $forecast->currently->temperature);
@@ -62,7 +62,7 @@
           <p style="color:white" class="lead mb-0"><?php echo $icon;?></p>
           <font style="color:white" size="+7"><?php echo $temperature_current;?> &deg;</font>
           <h4 style="color:white" class="lead mb-0"><?php echo $summary_current;?></h4>
-          <h4 style="color:white" class="lead mb-0">Kelembapan: <?php echo $humidity_current;?></h4>
+          <h4 style="color:white" class="lead mb-0">Kelembapan: <?php echo $humidity_current;?>%</h4>
           <h4 style="color:white" class="lead mb-0">Kecepatan Angin: <?php echo $windspeed_current;?><abbr title="miles per hour">MPH</abbr></h4>
         </div>
       </div>
@@ -71,12 +71,39 @@
     </section>
     <div class="row">
       <?php
-        $1=0;
+        $i=0;
         
         foreach($forecast->daily->data as $day);
+        $average_temp = (round($day->temperatureHigh)+round($day->temperatureLow))/2;
       ?>
-
+      <div class="col-12 cold-md-3">
+        <div class="card p-4 mb-4">
+          <h2 class="h4">
+            <?php echo date("l", $day->time);?>
+          </h2>
+          <h3 class="display-4">
+            <?php echo ($average_temp);?>
+          </h3>
+          <div class="d-flex justify-content-between">
+              <p class="lead">
+                  Hi<?php echo round($day->temperatureHigh); ?>&deg;
+              </p>
+              <p class="lead">
+                Hi<?php echo round($day->temperatureLow); ?>&deg;
+            </p>
+          </div>
+          <p class="lead m-0">
+            <span class="sr-only">Humidity</span> <?php echo $day->humidity*100?>%
+          </p>
+        </div>
+      </div>
     </div>
+    <?php
+
+    $i++;
+    if($i==5) break;
+  endforeach;
+    ?>
 
 
 <br>
