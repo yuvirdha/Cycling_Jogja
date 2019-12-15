@@ -16,7 +16,13 @@ class TabelTiketController extends Controller
         return view('/admin/tabel_tiket',compact('pendaftars'));
 
     }
-
+    public function hapus($id)
+    {
+    
+        DB::table('pendaftars')->where('id',$id)->delete();
+            
+        return redirect('/admin/tabel_tiket');
+    }
 
 // public function hapus($id)
 // {

@@ -112,7 +112,6 @@
                   <thead>
                     <tr>
                       <th>No</th>
-                      <th>Gambar Profil</th>
                       <th>Nama</th>
                       <th>Jenis Kelamin</th>
                       <th>Nomor HP</th>
@@ -127,7 +126,6 @@
                   <tfoot>
                     <tr>
                             <th>No</th>
-                            <th>Gambar Profil</th>
                             <th>Nama</th>
                             <th>Jenis Kelamin</th>
                             <th>Nomor HP</th>
@@ -146,7 +144,6 @@
                         @foreach($users as $u)
                         <tr>
                             <td>{{ $no++}}</td>
-                            <td>{{ $u->gambarprofil }}</td>
                             <td>{{ $u->nama }}</td>
                             <td>{{ $u->jenis_kelamin}}</td>
                             <td>{{ $u->nomor_hp}}</td>
