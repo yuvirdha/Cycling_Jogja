@@ -69,6 +69,8 @@
     </div>
   </div>
     </section>
+    <br>
+    <br>
 
 
     <div class = "container">
@@ -79,7 +81,7 @@
         foreach($forecast->daily->data as $day):
         $average_temp = (round($day->temperatureHigh)+round($day->temperatureLow))/2;
       ?>
-      <div class="col-12 cold-md-3">
+      <div class="col-12 col-md-3">
         <div class="card p-4 mb-4">
           <h2 class="h4">
             <?php echo date("l", $day->time);?>
@@ -102,7 +104,7 @@
       </div>
     <?php
     $i++;
-    if($i==5) break;
+    if($i==4) break;
   endforeach;
     ?>
     </div>
