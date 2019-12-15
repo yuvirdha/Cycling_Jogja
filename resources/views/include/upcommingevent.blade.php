@@ -76,13 +76,10 @@
           </div>
         </section>
 
-
-        <br>
-        <br>
-        <br>
+      </div>
          <section class="testimonials text-center bg-light">
             <div class="container">
-              <br>
+              <br><br>
               <h2 class="mb-5">Tim Oracle</h2>
               <div class="row">
                 <div class="col-lg-3">
@@ -117,5 +114,5 @@
             </div>
           </section>
          
-      </div>
+     
     </div>

@@ -66,7 +66,9 @@
 
       
         @include('include.upcommingeventbef')
+        @include('include.signup')
         @include('include.footer')
+        @include('include.footerAd')
 
             </div>
         </div>

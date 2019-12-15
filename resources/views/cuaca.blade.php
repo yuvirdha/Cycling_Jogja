@@ -36,9 +36,9 @@
     $api_url='https://api.darksky.net/forecast/d6f661c85e106becf4cbd58a9047b3d3/'.$coordinates;
     $forecast = json_decode(file_get_contents($api_url));
 
-    // echo '<pre>';
-    // print_r($forecast);
-    // echo '<pre>';
+    echo '<pre>';
+    print_r($forecast);
+    echo '<pre>';
 
     $loc_current = $forecast->timezone;
     $temperature_current =round( $forecast->currently->temperature);
@@ -69,6 +69,14 @@
     </div>
   </div>
     </section>
+    <div class="row">
+      <?php
+        $1=0;
+        
+        foreach($forecast->daily->data as $day);
+      ?>
+
+    </div>
 
 
 <br>

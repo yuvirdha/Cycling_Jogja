@@ -31,6 +31,8 @@ Route::get('/cuacawelcome', 'CuacaController@index');
 Route::get('/sewasepedawelcome', 'SewaSepedaController@index');
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/homepage', 'EventController@index')->name('user.homepage');
+Route::get('/detailprofil', 'DetailProfilController@index');
+
 
 Route::get('/pemesanan/{id}', 'PemesananController@index');
 Route::get('/pesan_tiket/{id_event}', 'PemesananController@store');
