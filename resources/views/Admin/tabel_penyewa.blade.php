@@ -138,8 +138,7 @@
                    <td>{{$p->id_sepeda}}</td>
                    <td>{{$p->token}}</td>
                    <td>
-                      <a href="/admin/hapuspenyewa/{{ $p->id }}" class="btn btn-primary">Hapus</a>
-                      <a href="/admin/editpenyewa/{{ $p->id }}" class="btn btn-primary">Edit</a>
+                      <a href="/admin/hapus_penyewa/{{ $p->id }}" class="btn btn-primary">Hapus</a>
                   </td>
                 </tr>
                   @endforeach

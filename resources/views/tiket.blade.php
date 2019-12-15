@@ -106,7 +106,6 @@
 <br>
 
 
-
 @include('include.upcommingevent')
 @include('include.signup')
 @include('include.footer')

@@ -65,7 +65,7 @@
                                       </tr>
                                 </table>
                               </div>
-                          <a href="#" class="btn btn-primary" style="background-color:#F38230; border-color:#F38230">Batalkan</a>
+                          <a href="/homepage" class="btn btn-primary" style="background-color:#F38230; border-color:#F38230">Batalkan</a>
                             <a href="/pesan_tiket/{{$event[0]->id}}" class="btn btn-primary" style="background-color:#F38230; border-color:#F38230">Pesan</a>
                         </div>
                       </div>
@@ -76,8 +76,7 @@
     
 </div>
 
-@include('include.upcommingevent')
-
+  @include('include.upcommingevent')
   <!-- Call to Action -->
   @include('include.signup')
   @include('include.footer')

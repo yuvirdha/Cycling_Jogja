@@ -140,6 +140,9 @@
                    <td>{{$t->id_user}}</td>
                    <td>{{$t->id_event}}</td>
                    <td>{{$t->token}}</td>
+                   <td>
+                      <a href="/admin/hapus_tiket/{{ $t->id }}" class="btn btn-primary">Hapus</a>
+                  </td>
                  </tr>
                  @endforeach
                   </tbody>

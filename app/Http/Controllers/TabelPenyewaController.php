@@ -13,5 +13,12 @@ class TabelPenyewaController extends Controller
     	return view('/admin/tabel_penyewa',compact('penyewa'));
  
     }
+    public function hapus($id)
+    {
+    
+        DB::table('penyewas')->where('id',$id)->delete();
+            
+        return redirect('/admin/tabel_penyewa');
+    }
 
 }

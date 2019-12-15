@@ -27,9 +27,9 @@
 </head>
 
 <body>
-  @include('include.navigation')
-  @include('include.header')
-  @include('include.icongrid')
+@include('include.navbefsign')
+        @include('include.header')
+        @include('include.icongridbef')
 
 <?php
     $coordinates = '-7.797068, 110.370529';
@@ -73,11 +73,8 @@
 
 <br>
 <br>
-
-  @include('include.upcommingevent')
-  @include('include.signup')
-  @include('include.footer')
-  @include('include.logoutmodal')
+      @include('include.upcommingeventbef')
+        @include('include.footer')
 
   <!-- Bootstrap core JavaScript -->
   <script src="{{url('vendor/jquery/jquery.min.js')}}"></script>

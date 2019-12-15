@@ -17,7 +17,9 @@ class TiketController extends Controller
     {
         $user = Auth::user(); 
         //print($user->id);
-
+        $events = DB::table('events')->where('waktu_pelaksanaan','!=','{{$event->waktu_pelaksanaan}}')
+                    ->orderBy('waktu_pelaksanaan', 'asc')->get();
+             
         $tiket = DB::table('pendaftars')->where('id_user', $user->id)
                 ->join('users','pendaftars.id_user','=','users.id')
                 ->join('events','pendaftars.id_event','=','events.id')
@@ -27,7 +29,7 @@ class TiketController extends Controller
         ->join('sepedas','penyewas.id_sepeda','=','sepedas.id')
         ->get();
 
-        return view('tiket',compact('tiket','tiketsepeda'));
+        return view('tiket',compact('tiket','tiketsepeda','events'));
     }
 
     /**

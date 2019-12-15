@@ -18,8 +18,11 @@ class EventController extends Controller
      */
     public function index()
     {
+
         $event = DB::table('events')->orderBy('waktu_pelaksanaan', 'asc')->first();
-        $events = DB::table('events')->where('waktu_pelaksanaan','<>',' {{$event->waktu_pelaksanaan}}')->get();
+        $events = DB::table('events')->where('waktu_pelaksanaan','!=','{{$event->waktu_pelaksanaan}}')
+                    ->orderBy('waktu_pelaksanaan', 'asc')->get();
+             
         
         $user = Auth::user();
 

@@ -32,6 +32,7 @@
 
   @include('include.icongrid')
   @include('include.sewasepeda')
+  @include('include.upcommingevent')
 
   @include('include.logoutmodal')
   @include('include.signup')
