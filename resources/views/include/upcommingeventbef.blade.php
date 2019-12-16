@@ -65,7 +65,7 @@
         </div>
       </div>
       <div class="row no-gutters">
-        <div class="col-lg-6 text-white showcase-img" style="background-image: url('img/pantai1.jpg');"></div>
+      <div class="col-lg-6 text-white showcase-img" style="background-image: url('img/pantai1.jpg');"></div>
         <div class="col-lg-6 my-auto showcase-text">
           <h2>Pantai Nglambor</h2>
           <p class="lead mb-0">Di Yogya juga terdapat pantai yang bisa untuk snorkeling asyik lho, tempatnya di pantai nglambor. Tidak seperti pantai selatan lainnya, disini terdapat laguna dengan air yang cukup tenang. Kekayaan alam disini bisa kita nikmati sambil snorkeling. Selain itu, terdapat juga berbagai spot unik dan asyik untuk berfoto. Anda juga bisa menyeberang ke pulau kecil menggunakan jembatan tali, sambil uji nyali! Destinasi wisata Jogja yang satu ini wajib anda kunjungi.</p>
