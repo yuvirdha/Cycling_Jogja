@@ -135,7 +135,7 @@
         
 
           <div class="form-group">
-            <label for="nama" class="col-form-label">Nama:</label>
+            <label for="nama" class="col-form-label">Nama</label>
             <input type="text" class="form-control @error('nama') is-invalid @enderror" name="nama" value="{{ Auth::user()->nama }}" autocomplete="nama" autofocus>
 
             @error('nama')
@@ -159,7 +159,7 @@
                 </div>
     
                 <div class="form-group">
-                    <label for="nomor_hp" class="col-form-label">Nomor Telepon:</label>
+                    <label for="nomor_hp" class="col-form-label">Nomor Telepon</label>
                     <input type="text" class="form-control @error('nomor_hp') is-invalid @enderror" name="nomor_hp" value="{{ Auth::user()->nomor_hp }}" autocomplete="nomor_hp" autofocus>
 
                     @error('nomor_hp')
@@ -181,7 +181,7 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="email" class="col-form-label">Email:</label>
+                        <label for="email" class="col-form-label">Email</label>
                         <input type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ Auth::user()->email }}" autocomplete="email">
 
                         @error('email')

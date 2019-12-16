@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 13 Des 2019 pada 07.58
--- Versi server: 10.4.8-MariaDB
--- Versi PHP: 7.2.24
+-- Generation Time: Dec 16, 2019 at 08:06 AM
+-- Server version: 10.4.8-MariaDB
+-- PHP Version: 7.3.11
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -25,7 +25,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `admins`
+-- Table structure for table `admins`
 --
 
 CREATE TABLE `admins` (
@@ -38,16 +38,16 @@ CREATE TABLE `admins` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data untuk tabel `admins`
+-- Dumping data for table `admins`
 --
 
 INSERT INTO `admins` (`id`, `name`, `email`, `password`, `created_at`, `updated_at`) VALUES
-(1, 'Admin', 'admin@cyclingjogja.com', '$2y$10$fkbIYZsiLf/0.ACb4GMTtObPaIeYrxCfs6foX6YSGxJuvyLADSsSy', '2019-12-05 07:10:56', '2019-12-05 07:10:56');
+(1, 'admin', 'admin@cyclingjogja.com', '$2y$10$PeY4.kWD.AVpv5PbOKSyIOgxJweHJ1I2/8WEbwIxix541/FFZeyYm', '2019-12-02 03:07:30', '2019-12-02 03:07:30');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `events`
+-- Table structure for table `events`
 --
 
 CREATE TABLE `events` (
@@ -63,16 +63,16 @@ CREATE TABLE `events` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data untuk tabel `events`
+-- Dumping data for table `events`
 --
 
 INSERT INTO `events` (`id`, `gambar_event`, `nama_event`, `rincian_event`, `waktu_pelaksanaan`, `rute`, `harga_tiket`, `created_at`, `updated_at`) VALUES
-(4, '1575955576_Screenshot (8).png', 'qwerty', 'sdfghn', '2019-12-04', 'cvbnbx', 2, NULL, NULL);
+(11, '1576442327_PrambananTempleSunsetTour.jpg', 'Tour de Prambanan', 'Bersepeda keliling Jogja memang seru. Banyak spot yang terlalu menarik untuk dihiraukan. Ayo, bersepeda dan jelajahi keindahannya', '2019-12-20', 'Prambanan-Keraton-Kaliurang', 100000, NULL, NULL);
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `failed_jobs`
+-- Table structure for table `failed_jobs`
 --
 
 CREATE TABLE `failed_jobs` (
@@ -87,7 +87,7 @@ CREATE TABLE `failed_jobs` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `migrations`
+-- Table structure for table `migrations`
 --
 
 CREATE TABLE `migrations` (
@@ -97,7 +97,7 @@ CREATE TABLE `migrations` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data untuk tabel `migrations`
+-- Dumping data for table `migrations`
 --
 
 INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
@@ -106,19 +106,18 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 (3, '2019_08_19_000000_create_failed_jobs_table', 1),
 (4, '2019_11_25_070732_create_events_table', 1),
 (5, '2019_11_25_073349_create_pendaftars_table', 1),
-(6, '2019_12_02_093111_create_admins_table', 1),
-(7, '2019_12_09_145209_create_tabel_sepeda', 2),
+(6, '2019_12_02_093111_create_admins_table', 2),
+(7, '2019_12_09_145209_create_tabel_sepeda', 3),
 (8, '2019_12_09_154649_add_gambarprofil_on_users', 3),
-(9, '2019_12_09_180103_create_penyewa_table', 4),
-(10, '2019_12_09_195144_change_tabel_sepeda_to_sepedas_table', 4),
-(11, '2019_12_09_195434_change_penyewa_to_penyewas_table', 4),
-(12, '2019_12_09_200153_add_gambar_sepeda_field_to_sepedas_table', 4),
-(13, '2019_12_12_232503_create_soals', 5);
+(9, '2019_12_09_180103_create_penyewa_table', 3),
+(10, '2019_12_09_195144_change_tabel_sepeda_to_sepedas_table', 3),
+(11, '2019_12_09_195434_change_penyewa_to_penyewas_table', 3),
+(12, '2019_12_09_200153_add_gambar_sepeda_field_to_sepedas_table', 3);
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `password_resets`
+-- Table structure for table `password_resets`
 --
 
 CREATE TABLE `password_resets` (
@@ -127,17 +126,10 @@ CREATE TABLE `password_resets` (
   `created_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
---
--- Dumping data untuk tabel `password_resets`
---
-
-INSERT INTO `password_resets` (`email`, `token`, `created_at`) VALUES
-('d@gmail.com', '$2y$10$lrBMvG8oosv/RFV4xpI1LOOgVxsL8SUB9uHWEaYCHUT4VivqfjKYe', '2019-12-09 07:09:48');
-
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `pendaftars`
+-- Table structure for table `pendaftars`
 --
 
 CREATE TABLE `pendaftars` (
@@ -150,20 +142,26 @@ CREATE TABLE `pendaftars` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data untuk tabel `pendaftars`
+-- Dumping data for table `pendaftars`
 --
 
 INSERT INTO `pendaftars` (`id`, `id_user`, `id_event`, `token`, `created_at`, `updated_at`) VALUES
-(1, 1, 1, '98', NULL, NULL),
-(2, 1, 1, '89', NULL, NULL),
-(3, 4, 4, '99', NULL, NULL),
-(4, 4, 4, '78', NULL, NULL),
-(5, 4, 4, '27', NULL, NULL);
+(1, 2, 1, '34', NULL, NULL),
+(2, 2, 1, '96', NULL, NULL),
+(3, 4, 1, '70', NULL, NULL),
+(4, 4, 1, '43', NULL, NULL),
+(5, 4, 1, '12', NULL, NULL),
+(6, 9, 3, '43', NULL, NULL),
+(7, 9, 3, '28', NULL, NULL),
+(8, 9, 3, '36', NULL, NULL),
+(9, 10, 10, '25', NULL, NULL),
+(10, 10, 10, '92', NULL, NULL),
+(11, 10, 10, '21', NULL, NULL);
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `penyewas`
+-- Table structure for table `penyewas`
 --
 
 CREATE TABLE `penyewas` (
@@ -176,16 +174,30 @@ CREATE TABLE `penyewas` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data untuk tabel `penyewas`
+-- Dumping data for table `penyewas`
 --
 
 INSERT INTO `penyewas` (`id`, `id_user`, `id_sepeda`, `token`, `created_at`, `updated_at`) VALUES
-(1, 4, 2, '56', NULL, NULL);
+(1, 10, 1, '75', NULL, NULL);
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `sepedas`
+-- Table structure for table `sepeda`
+--
+
+CREATE TABLE `sepeda` (
+  `kode` int(20) NOT NULL,
+  `gambar_sepeda` varchar(20) NOT NULL,
+  `jenis` varchar(255) NOT NULL,
+  `harga` int(20) NOT NULL,
+  `stok` int(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `sepedas`
 --
 
 CREATE TABLE `sepedas` (
@@ -199,43 +211,17 @@ CREATE TABLE `sepedas` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data untuk tabel `sepedas`
+-- Dumping data for table `sepedas`
 --
 
 INSERT INTO `sepedas` (`id`, `gambar_sepeda`, `jenis`, `harga`, `stock`, `created_at`, `updated_at`) VALUES
-(2, '1576113430_WhatsApp Image 2018-03-31 at 22.19.32.jpeg', 'oracle kita', 100000, '12', NULL, NULL),
-(3, '1576114647_WhatsApp Image 2018-04-22 at 22.15.52.jpeg', 'Eigen 3.2', 1000000, '10', NULL, NULL),
-(4, '1576114710_WhatsApp Image 2018-06-19 at 17.44.30.jpeg', 'avilia', 234512, '20', NULL, NULL);
+(1, '1576119568_Sepeda-Gunung-Pacific-INVERT-100-VT-27.jpg', 'Sepeda Gunung Pacific INVERT 100 VT 27', 20000, '12', NULL, NULL),
+(2, '1576119693_502454001.jpg', 'Sepeda Gunung Polygon 46', 25000, '15', NULL, NULL);
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `soals`
---
-
-CREATE TABLE `soals` (
-  `id` int(10) UNSIGNED NOT NULL,
-  `soal` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `opsi_a` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `opsi_b` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `opsi_c` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `opsi_d` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `jawaban_benar` enum('a','b','c','d') COLLATE utf8mb4_unicode_ci NOT NULL,
-  `created_at` timestamp NULL DEFAULT NULL,
-  `updated_at` timestamp NULL DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
---
--- Dumping data untuk tabel `soals`
---
-
-INSERT INTO `soals` (`id`, `soal`, `opsi_a`, `opsi_b`, `opsi_c`, `opsi_d`, `jawaban_benar`, `created_at`, `updated_at`) VALUES
-(1, 'avil lapar, apa yang harus dilakukan', 'makan', 'tidur', 'youtube', 'pesen gofood', 'd', NULL, NULL);
-
--- --------------------------------------------------------
-
---
--- Struktur dari tabel `users`
+-- Table structure for table `users`
 --
 
 CREATE TABLE `users` (
@@ -255,140 +241,141 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data untuk tabel `users`
+-- Dumping data for table `users`
 --
 
 INSERT INTO `users` (`id`, `gambarprofil`, `nama`, `jenis_kelamin`, `nomor_hp`, `tanggal_lahir`, `riwayat`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, NULL, 'avilia', 'P', '085768454410', '2001-09-22', 0, '18523174@students.uii.ac.id', NULL, 'qwerty123', NULL, '2019-12-07 00:48:07', '2019-12-09 07:04:37'),
-(2, NULL, 'dilfa123', 'L', '12345678', '2000-06-05', 0, 'd@gmail.com', NULL, 'avilia123', NULL, '2019-12-09 07:08:14', '2019-12-09 07:09:02'),
-(3, NULL, 'dilfass nakal', 'P', '08994010735', '2000-03-05', 0, 'dsalsabiela@gmail.com', NULL, '12345678', NULL, '2019-12-09 07:43:18', '2019-12-09 10:36:44'),
-(4, NULL, 'wardha hoyhhihiya', 'L', '1234567890', '2020-09-22', 0, 'w@gmail.com', NULL, '$2y$10$7KrIpEZKpXExHrWVjekEx.KfSLq/i/Wk8iE3VAVSIUzMwChx1IZAa', NULL, '2019-12-09 19:47:38', '2019-12-10 10:38:59'),
-(5, NULL, 'qwer', 'L', '1234567890', '2019-12-05', 0, 'zxcvbn@gmail.com', NULL, '$2y$10$J3x.dW6az2CY6QIZuPHlluPLTPEaPgyo2HcsahYgKzAfE/t./uukm', NULL, '2019-12-10 08:53:17', '2019-12-10 08:53:17'),
-(6, NULL, 'qwertyuiop', 'L', '1234567890', '2019-12-05', 0, '0@gmail.com', NULL, '$2y$10$YXejekjjC0zk2tI/JxJjGuFAlNqBPJYRLNxW0IQc6aXACC659INBi', NULL, '2019-12-10 09:09:34', '2019-12-10 09:09:34');
+(5, NULL, 'Virdha', 'P', '12345678', '1999-09-17', 0, 'yvr@gmail.com', NULL, '$2y$10$hF0xTQgbY7FG.6Zif/3JwuknkYvABC11pBGAj9/0wnD8TPgDfPEb2', NULL, '2019-12-08 07:12:29', '2019-12-08 07:12:29'),
+(6, NULL, 'dilfas', 'P', '08994010735', '2000-05-03', 0, 'dsalsabiela@gmail.com', NULL, '12345678', NULL, '2019-12-09 08:20:31', '2019-12-09 08:45:52'),
+(7, NULL, 'kripijenius', 'P', '123456789', '1999-09-17', 0, 'kripijenius@gmail.com', NULL, '12345678', NULL, '2019-12-09 10:34:10', '2019-12-09 11:59:48'),
+(8, NULL, 'virdha', 'P', '12345678', '2019-12-12', 0, 'avtttt@gmail.com', NULL, '$2y$10$NTXlmOUG0a76GfDUjyF8j.wJdRYQ0mvVSMqZi2FwQISJSo.tfUocS', NULL, '2019-12-09 21:43:10', '2019-12-09 21:43:10'),
+(9, NULL, 'zzzz', 'L', '88888888', '1212-12-12', 0, 'b@gmail.com', NULL, '$2y$10$NBisgguMyqb/ozpHuN8GvOaTBgCol7/lfOMeVLnh/eWl5nMLfi.n.', NULL, '2019-12-09 23:22:36', '2019-12-09 23:22:36'),
+(10, NULL, 'Kripijenius', 'P', '81372079225', '1999-09-17', 0, 'yuv@gmail.com', NULL, '$2y$10$f21ZFa.ZCCELrRNTdcqNaeLye6UsbfV08hxjKlcMaquxbhwVojwvK', NULL, '2019-12-11 03:28:13', '2019-12-11 18:34:19'),
+(11, NULL, 'virdha', 'P', '123456789', '2019-12-08', 0, 'yuveeeeeeee@gmail.com', NULL, '$2y$10$.9vwAsLsIgnEBrVhQ4NbsOeuIG7rt/La3LxpJGCFTMJYrqwNNIkZO', NULL, '2019-12-15 22:54:17', '2019-12-15 22:54:17');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indeks untuk tabel `admins`
+-- Indexes for table `admins`
 --
 ALTER TABLE `admins`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `admins_email_unique` (`email`);
 
 --
--- Indeks untuk tabel `events`
+-- Indexes for table `events`
 --
 ALTER TABLE `events`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `failed_jobs`
+-- Indexes for table `failed_jobs`
 --
 ALTER TABLE `failed_jobs`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `migrations`
+-- Indexes for table `migrations`
 --
 ALTER TABLE `migrations`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `password_resets`
+-- Indexes for table `password_resets`
 --
 ALTER TABLE `password_resets`
   ADD KEY `password_resets_email_index` (`email`);
 
 --
--- Indeks untuk tabel `pendaftars`
+-- Indexes for table `pendaftars`
 --
 ALTER TABLE `pendaftars`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `penyewas`
+-- Indexes for table `penyewas`
 --
 ALTER TABLE `penyewas`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `sepedas`
+-- Indexes for table `sepeda`
+--
+ALTER TABLE `sepeda`
+  ADD PRIMARY KEY (`kode`);
+
+--
+-- Indexes for table `sepedas`
 --
 ALTER TABLE `sepedas`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `soals`
---
-ALTER TABLE `soals`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indeks untuk tabel `users`
+-- Indexes for table `users`
 --
 ALTER TABLE `users`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `users_email_unique` (`email`);
 
 --
--- AUTO_INCREMENT untuk tabel yang dibuang
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT untuk tabel `admins`
+-- AUTO_INCREMENT for table `admins`
 --
 ALTER TABLE `admins`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT untuk tabel `events`
+-- AUTO_INCREMENT for table `events`
 --
 ALTER TABLE `events`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
--- AUTO_INCREMENT untuk tabel `failed_jobs`
+-- AUTO_INCREMENT for table `failed_jobs`
 --
 ALTER TABLE `failed_jobs`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT untuk tabel `migrations`
+-- AUTO_INCREMENT for table `migrations`
 --
 ALTER TABLE `migrations`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
--- AUTO_INCREMENT untuk tabel `pendaftars`
+-- AUTO_INCREMENT for table `pendaftars`
 --
 ALTER TABLE `pendaftars`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
--- AUTO_INCREMENT untuk tabel `penyewas`
+-- AUTO_INCREMENT for table `penyewas`
 --
 ALTER TABLE `penyewas`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT untuk tabel `sepedas`
+-- AUTO_INCREMENT for table `sepeda`
+--
+ALTER TABLE `sepeda`
+  MODIFY `kode` int(20) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `sepedas`
 --
 ALTER TABLE `sepedas`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT untuk tabel `soals`
---
-ALTER TABLE `soals`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-
---
--- AUTO_INCREMENT untuk tabel `users`
+-- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
