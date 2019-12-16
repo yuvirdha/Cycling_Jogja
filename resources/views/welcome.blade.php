@@ -27,12 +27,13 @@
         @include('include.header')
         @include('include.icongridbef')
         <div class="container">
+          <br><br><br>
         <div class="col-md-0">
                 <div class="profile-content">
-                    <h3>Agenda Cycling
-                      </h3>
+                    <h2>Agenda Cycling
+                      </h2>
                     <div class="row">
-                    <div class="card mb-4">
+                    <div class="card mb-0">
                         <img class="card-img-top"src="{{ url('/images/'.$event->gambar_event) }}"alt="Card image cap">
                         <div class="card-body">
                           <h2 class="card-title">{{ $event->nama_event}}</h2>
@@ -62,8 +63,7 @@
       </div>
     </div>
 </div>
-
-
+<br><br><br>
       
         @include('include.upcommingeventbef')
         @include('include.signup')

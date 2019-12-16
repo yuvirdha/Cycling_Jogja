@@ -1,20 +1,23 @@
-
-    <div class="container">
+<div class="container">
 
 <!-- Page Heading -->
-<h1 class="my-4">Event yang Akan Datang
+<h2 class="my-4">Event yang Akan Datang
   <small></small>
-</h1>
+</h2>
 
 <!-- Project One -->
-<div class="row">
+<div class="card">
+  <br><br>
 @foreach($events as $q)
-  <div class="col-md-7">
+<div class="row">
+  <div class="col-md-1">
+  </div>
+  <div class="col-md-6">
     <a href="#">
       <img class="img-fluid rounded mb-3 mb-md-0" src="{{ url('/images/'.$q->gambar_event) }}" alt="Card image cap">
     </a>
   </div>
-  <div class="col-md-5">
+  <div class="col-md-4">
   <h2 class="card-title">{{ $q->nama_event}}</h2>
   <p class="card-text">{{ $q->rincian_event}} </p>
   <div class="features-icons-item mx-auto mb-0 mb-lg-3">
@@ -40,9 +43,10 @@
     </div>
     <a class="btn btn-primary" style="background-color:#F38230; border-color:#F38230" href="/login">Gabung</a>
   </div>
+</div>
+<br><br>
   @endforeach
 </div>
-<br>
 
 <br>
 <br>
@@ -75,11 +79,15 @@
       </div>
     </div>
   </section>
+</div>
+
+      <br><br><br>
+
 
 </div>
    <section class="testimonials text-center bg-light">
       <div class="container">
-        <br><br>
+        <br><br><br>
         <h2 class="mb-5">Tim Oracle</h2>
         <div class="row">
           <div class="col-lg-3">

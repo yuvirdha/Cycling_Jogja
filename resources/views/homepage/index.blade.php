@@ -30,14 +30,12 @@
   @include('include.navigation')
   @include('include.header')
   @include('include.icongrid')
-  @include('include.profil')
 
 
 
-        <div class="col-md-9">
                 <div class="container">
                     <div class="row">
-                    <div class="card mb-4">
+                    <div class="card mb-0">
                         <img class="card-img-top" width="150px" src="{{ url('/images/'.$event->gambar_event) }}" alt="Card image cap">
                         <div class="card-body">
                           <h2 class="card-title">{{ $event->nama_event}}</h2>
@@ -63,7 +61,6 @@
                                 </table>
                               </div>
                             <a href="/pemesanan/{{ $event->id}}" class="btn btn-primary" style="background-color:#F38230; border-color:#F38230">Gabung</a>
-                          </div>
                         </div>
                     </div>
                     </div>
