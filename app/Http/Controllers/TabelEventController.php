@@ -13,7 +13,7 @@ class TabelEventController extends Controller
     public function index()
     {
     	$events = DB::table('events')->get();
-        return view('/admin/tabel_event',compact('events'));
+        return view('/Admin/tabel_event',compact('events'));
 
     }
 public function create()

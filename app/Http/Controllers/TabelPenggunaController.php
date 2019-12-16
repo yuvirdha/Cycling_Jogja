@@ -14,7 +14,7 @@ class TabelPenggunaController extends Controller
     	$users = DB::table('users')->get();
 
     	// mengirim data pegawai ke view index
-    	return view('/admin/tabel_pengguna',['users' => $users]);
+    	return view('/Admin/tabel_pengguna',['users' => $users]);
 
 	}
 	public function hapus($id)
