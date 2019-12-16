@@ -111,7 +111,7 @@
                             <div class="form-group row">
                                     <label class="col-sm-2 col-form-label">Gambar Sepeda</label>
                                     <div class="col-sm-5">
-                                      <input type="text" required="required" name="gambar_sepeda" value="{{ $s->gambar_sepeda }}" class="form-control">
+                                    <image src="{{ url('/images/'.$s->gambar_event) }}"></image>    
                                     </div>
                                   </div>
                                     <div class="form-group row">
