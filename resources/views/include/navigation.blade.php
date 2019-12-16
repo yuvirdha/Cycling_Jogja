@@ -15,7 +15,7 @@
             <a class="nav-link js-scroll-trigger" href="#services">Tentang</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#portfolio">Bantuan</a>
+            <a class="nav-link js-scroll-trigger" href="/bantuan">Bantuan</a>
           </li>
 
           <li class="nav-item">
