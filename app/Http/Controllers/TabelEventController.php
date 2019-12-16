@@ -50,7 +50,7 @@ public function store(Request $request)
 
 	// die;
 
-	return redirect('/Admin/tabel_event');
+	return redirect('/admin/tabel_event');
 
 }
 public function edit($id)
