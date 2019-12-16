@@ -248,7 +248,7 @@ color: #292F33;
 
 }
 
-@media (min-width:768px){
+/* @media (min-width:768px){
   .tiket-card{
     position: relative;
     width: 1126px;
@@ -371,4 +371,130 @@ text-indent: 2px;
 color: #292F33;
 
 }
+} */
+
+@media screen and (max-width:1080px){
+  .tiket-card{
+    position: relative;
+    width: auto;
+    height: 103px;
+    left: -5px;
+    top: -8px;
+
+background: #FFFFFF;
+  }
+
+  .nama-event{
+    position: absolute;
+left: 25.22%;
+right: 25.78%;
+top: 20.35%;
+bottom: 76.12%;
+
+font-family: Roboto;
+font-style: italic;
+font-weight: 300;
+font-size: 12px;
+line-height: 47px;
+text-align: center;
+letter-spacing: 0.03em;
+text-indent: 2px;
+
+color: #292F33;
+
+  }
+
+.nama-pengguna{
+
+  position: absolute;
+left: 30.67%;
+right: 56.88%;
+top: 10.45%;
+bottom: 79.03%;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: inherit;
+text-align: center;
+letter-spacing: 0.03em;
+text-indent: 2px;
+
+color: #292F33;
+
 }
+
+.card-oren{
+  position: inherit;
+width: 50px;
+height: 100px;
+left: 40px;
+top: 0px;
+
+background: #F38230;
+}
+
+.harga-tiket{
+  position: absolute;
+left: 15.67%;
+right: 25.88%;
+top: 60.45%;
+bottom: 60.03%;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 7px;
+line-height: 59px;
+text-align: auto;
+letter-spacing: 0.03em;
+text-indent: 2px;
+
+color: #292F33;
+}
+
+.tulisan-cycling{
+  position: absolute;
+  left: 6.68%;
+  right: 31.62%;
+  top: 148.79%;
+  bottom: -96.86%;
+  
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 59px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-indent: 2px;
+  
+  color: #FFFFFF;
+
+  transform: rotate(-90deg);
+
+}
+
+.token{
+
+  position: absolute;
+left: 87%;
+right: 46.88%;
+top: -15%;
+bottom: 100%;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 10px;
+line-height: 59px;
+text-align: center;
+letter-spacing: 0.03em;
+text-indent: 2px;
+
+color: #292F33;
+
+}
+}
+

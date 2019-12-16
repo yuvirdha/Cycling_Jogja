@@ -22,7 +22,6 @@
   <link href="{{url('css/landing-page.min.css')}}" rel="stylesheet">
 <link rel="stylesheet" href="{{ asset('/css/custom.css') }}">
 
-
 <script src="https://kit.fontawesome.com/9845349ab7.js" crossorigin="anonymous"></script>
 
 </head>
@@ -30,19 +29,12 @@
 <body>
   @include('include.navigation')
   @include('include.header')
-  @include('include.icongrid')
+  
 
+  @include('include.upcommingeventbef')
 
-
-
+  @include('include.footer')
  
-<br>
-<br>
-<br>
-
-@include('include.signup')
-@include('include.footer')
-@include('include.logoutmodal')
 
   <!-- Bootstrap core JavaScript -->
   <script src="{{url('vendor/jquery/jquery.min.js')}}"></script>
@@ -51,4 +43,3 @@
 </body>
 
 </html>
-

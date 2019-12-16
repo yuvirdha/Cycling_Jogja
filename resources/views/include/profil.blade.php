@@ -45,19 +45,6 @@
                                 @csrf
 
                           <div class="modal-body">
-                              <div class="form-group">
-                                  <div class="avatar-upload">
-                                      <div class="avatar-edit">
-                                          <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
-                                          <label for="imageUpload"></label>
-                                      </div>
-                                      <div class="avatar-preview">
-                                          <div id="imagePreview" style="background-image: url(http://i.pravatar.cc/500?img=7);">
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                          
 
                             <div class="form-group">
                               <label for="nama" class="col-form-label">Nama:</label>
@@ -106,7 +93,7 @@
                                       </div>
 
                                       <div class="form-group">
-                                          <label for="email" class="col-form-label">Email:</label>
+                                          <label for="email" class="col-form-label">Email:z</label>
                                           <input type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ Auth::user()->email }}" autocomplete="email">
 
                                           @error('email')

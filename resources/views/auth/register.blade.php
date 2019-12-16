@@ -8,7 +8,7 @@
             <form class="login100-form validate-form" method="POST" action="{{ route('register') }}">
                 @csrf
                 <span class="login100-form-title p-b-43">
-                    Masuk
+                    Daftar
                 </span>
 
                 {{-- gambar profil
@@ -39,6 +39,8 @@
 
 
                 {{-- jenis kelamin --}}
+
+
                 <div class="wrap-input100 validate-input">
                     <select name="jenis_kelamin" id="jenis_kelamin" type="gender" class="input100" class="form-control @error('jenis_kelamin') is-invalid @enderror" value="{{ old('jenis_kelamin') }}" required autocomplete="jenis_kelamin" autofocus>
                         <option value="L">Laki-laki</option>
@@ -53,6 +55,9 @@
                         </span>
                     @enderror
                 </div>
+                
+
+
 
          
                 {{-- nomor handphone --}}

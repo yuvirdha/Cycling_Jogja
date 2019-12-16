@@ -12,7 +12,7 @@
                     <a class="nav-link js-scroll-trigger" href="/">Beranda</a>
                   </li>
               <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#services">Tentang</a>
+                <a class="nav-link js-scroll-trigger" href="/tentangbef">Tentang</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link js-scroll-trigger" href="/bantuanbef">Bantuan</a>

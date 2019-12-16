@@ -76,14 +76,6 @@
         </div>
       </li>
   
-      <!-- Nav Item - Utilities Collapse Menu -->
-      <li class="nav-item">
-        <a class="nav-link" href="/admin/soal">
-          <i class="fas fa-fw fa-wrench"></i>
-          <span>Buat Soal</span>
-        </a>
-      </li>
-  
   
       <!-- Sidebar Toggler (Sidebar) -->
       <div class="text-center d-none d-md-inline">

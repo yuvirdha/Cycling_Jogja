@@ -44,12 +44,12 @@
             </div>
             </a>
             <div class="col-lg-2">
-              <a href="/detailprofil" style="text-decoration:none; color:#000000;">
+              <a data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" style="text-decoration:none; color:#000000;">
             <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
               <div class="features-icons-icon d-flex">
                 <i class="fas fa-user-circle m-auto" style="color:#F38230;"></i>
               </div>
-              <h5>Profil</h5>
+              <h5>Edit Profil</h5>
             </div>
           </div>
         </a>
