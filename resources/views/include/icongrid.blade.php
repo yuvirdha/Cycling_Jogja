@@ -49,7 +49,7 @@
               <div class="features-icons-icon d-flex">
                 <i class="fas fa-user-circle m-auto" style="color:#F38230;"></i>
               </div>
-              <h5>Profil</h5>
+              <h5>Edit Profil</h5>
             </div>
           </div>
         </a>

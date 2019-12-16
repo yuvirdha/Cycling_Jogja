@@ -12,17 +12,12 @@
                 <a class="nav-link js-scroll-trigger" href="/homepage">Beranda</a>
               </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#services">Tentang</a>
+            <a class="nav-link js-scroll-trigger" href="/tentang">Tentang</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="/bantuan">Bantuan</a>
           </li>
 
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#team">
-                <i class="far fa-bell"></i>
-            </a>
-          </li>
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <!-- Left Side Of Navbar -->
