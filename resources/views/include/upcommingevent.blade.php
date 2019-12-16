@@ -58,7 +58,7 @@
     
             <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/sepeda.jfif');"></div>
             <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-              <h2>Tahukah Anda ??</h2>
+              <h2>Tahukah Anda?</h2>
               <p class="lead mb-0">Selain meningkatan suasa hati, bersepeda juga dapat mencegah penyakit jantung.
                 Bersepeda sejauh 20 mil dalam seminggu dapat mengurangi resiko terkena penyakit jantung koroner sebesar 50 persen. Sementara itu bersepeda juga bisa menghilangkan kerutan tanda-tanda penuaan.</p>
             </div>
