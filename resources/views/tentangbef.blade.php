@@ -27,9 +27,39 @@
 </head>
 
 <body>
-  @include('include.navigation')
+@include('include.navbefsign')
   @include('include.header')
-  
+  <div class="card">
+  <br><br>
+  <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/jogja.jpg');"></div>
+<div class="row">
+  <div class="col-md-1">
+  </div>
+  <div class="col-md-6">
+  </div>
+  <div class="col-md-4">
+  <h2 class="card-title">Tentang Web Kami</h2>
+  <p class="card-text"></p>
+  <div class="features-icons-item mx-auto mb-0 mb-lg-3">
+    <div class="features-icons-icon d-flex">
+    Oracle. Merupakan sebuah tim yang terbentuk pada tahun 2019. Berdasarkan hasil kesepakatan dengan
+    Dinas Pariwisata Provinsi DIY, kami berkesempatan untuk menciptakan sebuah aplikasi berbasis web dengan 
+    label "Cycling Jogja".
+    Persentase pendapatan Provinsi DIY di sektor pariwisata masih tergolong fluktuatif. Hal ini akan memengaruhi
+    stabilitas program pengembangan DIY. Sehingga Dinas Pariwisata Yogyakarta mencanangkan kebijakan kerja
+    untuk meningkatkan promosi dan pemasaran pariwisata dengan meluncurkan program Cycling Jogja. 
+    Cycling Jogja menyuguhkan suasana berwisata yang berbeda dengan fitur yang lengkap. Disetiap bulannya kami
+    menyediakan rute perjalanan yang melalui tempat wisata, warung kuliner, dan acara yang sedang berlangsung pada
+    bulan tersebut, beserta infomasinya secara lengkap. Menariknya, Cycling Jogja menyediakan fitur sewa sepeda
+    dengan harga terjangkau dan dapat dipesan dimanapun dan kapanpun.
+    Cycling Jogja berkomitmen untuk menjadi mitra berwisata Anda yang menyenangkan dengan bersepeda.
+    </div>
+    </div>
+  </div>
+</div>
+<br><br>
+ 
+</div>
 
   @include('include.upcommingeventbef')
 
