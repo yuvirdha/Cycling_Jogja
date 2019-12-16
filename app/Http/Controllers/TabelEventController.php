@@ -67,8 +67,6 @@ public function update(Request $request)
 {
 
 	DB::table('events')->where('id',$request->id)->update([
-
-        'gambar_event' => $request->gambar_event,
 		'nama_event' => $request->nama_event,
 		'rincian_event' => $request->rincian_event,
         'waktu_pelaksanaan' => $request->waktu_pelaksanaan,
