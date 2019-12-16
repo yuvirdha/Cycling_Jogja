@@ -31,7 +31,7 @@
   @include('include.header')
   <div class="card">
   <br><br>
-
+  <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/jogja.jpg');"></div>
 <div class="row">
   <div class="col-md-1">
   </div>
@@ -45,23 +45,14 @@
     Oracle. Merupakan sebuah tim yang terbentuk pada tahun 2019. Berdasarkan hasil kesepakatan dengan
     Dinas Pariwisata Provinsi DIY, kami berkesempatan untuk menciptakan sebuah aplikasi berbasis web dengan 
     label "Cycling Jogja".
-    Persentase pendapatan Provinsi DIY di sektor pariwisata masih tergolong fluktuatif. Hal ini akan mempengaruhi
-    stabilitas program pengembangan DIY, maka Dinas Pariwisata Yogyakarta mencanangkan kebijakan kerja untuk meningkatkan
-    promosi dan pemasaran pariwisata.
-Salah satu upaya peningkatan promosi dan pemasaran yang dilakukan, adalah dengan meluncurkan
-program Joging Jogja. Program ini mengambil konsep location-based amazing race. Setiap bulan,
-Dinas Pariwisata Jogja membuat sebuah rantai perjalanan yang ditujukan untuk anggota program
-yang telah mendaftar. Rantai perjalanan ini menghubungkan tempat-tempat wisata di Jogja, warung-
-warung kuliner di Jogja, serta kegiatan acara (event) yang sedang berjalan di Jogja. Masyarakat yang
-mengikuti program ini, atau yang kemudian disebut sebagai Jagoan Jogja, akan dapat memulai
-perjalanannya di waktu yang telah ditentukan oleh Dinas. Seorang Jagoan Jogja akan memulai
-perjalanan dari startpoint. Dengan petunjuk yang diberikan melalui pesan yang muncul di halaman
-anggota portal Joging Jogja, Jagoan Jogja menuju ke checkpoint berikut nya. Jagoan Jogja akan
-diberikan tantangan kuis ketika sudah sampai di checkpoint berikutnya, dan akan mendapatkan
-petunjuk ke checkpoint berikutnya jika dapat menyelesaikan tantangan kuisnya. Untuk checkpoint
-yang berupa event, maka Jagoan Jogja harus mendatangi tempat tersebut di waktu saat event tersebut
-diselenggarakan. Portal Jagoan Jogja dapat mengetahui lokasi Jagoan Jogja dari GPS yang tertanam
-pada piranti pintar Jagoan Jogja.
+    Persentase pendapatan Provinsi DIY di sektor pariwisata masih tergolong fluktuatif. Hal ini akan memengaruhi
+    stabilitas program pengembangan DIY. Sehingga Dinas Pariwisata Yogyakarta mencanangkan kebijakan kerja
+    untuk meningkatkan promosi dan pemasaran pariwisata dengan meluncurkan program Cycling Jogja. 
+    Cycling Jogja menyuguhkan suasana berwisata yang berbeda dengan fitur yang lengkap. Disetiap bulannya kami
+    menyediakan rute perjalanan yang melalui tempat wisata, warung kuliner, dan acara yang sedang berlangsung pada
+    bulan tersebut, beserta infomasinya secara lengkap. Menariknya, Cycling Jogja menyediakan fitur sewa sepeda
+    dengan harga terjangkau dan dapat dipesan dimanapun dan kapanpun.
+    Cycling Jogja berkomitmen untuk menjadi mitra berwisata Anda yang menyenangkan dengan bersepeda.
     </div>
     </div>
   </div>
