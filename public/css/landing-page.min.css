@@ -58,7 +58,7 @@
     }
     .showcase .showcase-img
     {
-        min-height:30rem;
+        min-height:29rem;
         background-size:cover
     }
     @media (min-width:768px)
