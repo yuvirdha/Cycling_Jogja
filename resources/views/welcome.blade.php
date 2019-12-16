@@ -26,13 +26,9 @@
         @include('include.navbefsign')
         @include('include.header')
         @include('include.icongridbef')
-        <div class="container">
-          <br><br><br>
-        <div class="col-md-0">
-                <div class="profile-content">
-                    <h2>Agenda Cycling
-                      </h2>
-                    <div class="row">
+          <div class="container">
+              <div class="col-md-0">
+                  <div class="row">
                     <div class="card mb-0">
                         <img class="card-img-top"src="{{ url('/images/'.$event->gambar_event) }}"alt="Card image cap">
                         <div class="card-body">
@@ -68,7 +64,6 @@
         @include('include.upcommingeventbef')
         @include('include.signup')
         @include('include.footer')
-        @include('include.footerAd')
 
             </div>
         </div>

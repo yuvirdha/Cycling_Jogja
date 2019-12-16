@@ -1,9 +1,9 @@
 <div class="container">
 
 <!-- Page Heading -->
-<h2 class="my-4">Event yang Akan Datang
+<h3 class="my-4">Event yang Akan Datang
   <small></small>
-</h2>
+</h3>
 
 <!-- Project One -->
 <div class="card">
@@ -53,33 +53,33 @@
 <br>
 
 
-   <section class="showcase">
-    <div class="container-fluid p-0">
-      <div class="row no-gutters">
+<section class="showcase">
+  <div class="container-fluid p-0">
+    <div class="row no-gutters">
 
-        <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/sepeda.jfif');"></div>
-        <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-          <h2>Tahukah Anda?</h2>
-          <p class="lead mb-0">Selain meningkatan suasa hati, bersepeda juga dapat mencegah penyakit jantung.
-            Bersepeda sejauh 20 mil dalam seminggu dapat mengurangi resiko terkena penyakit jantung koroner sebesar 50 persen. Sementara itu bersepeda juga bisa menghilangkan kerutan tanda-tanda penuaan.</p>
-        </div>
-      </div>
-      <div class="row no-gutters"
-        <div class="col-lg-6 text-white showcase-img" style="background-image: url('img/pantai1.jpg');"></div>
-        <div class="col-lg-6 my-auto showcase-text">
-          <h2>Pantai Nglambor</h2>
-          <p class="lead mb-0">Di Yogya juga terdapat pantai yang bisa untuk snorkeling asyik lho, tempatnya di pantai nglambor. Tidak seperti pantai selatan lainnya, disini terdapat laguna dengan air yang cukup tenang. Kekayaan alam disini bisa kita nikmati sambil snorkeling. Selain itu, terdapat juga berbagai spot unik dan asyik untuk berfoto. Anda juga bisa menyeberang ke pulau kecil menggunakan jembatan tali, sambil uji nyali! Destinasi wisata Jogja yang satu ini wajib anda kunjungi.</p>
-        </div>
-      </div>
-      <div class="row no-gutters">
-        <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/mangunan.jpg');"></div>
-        <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-          <h2>Kebun Buah Mangunan</h2>
-          <p class="lead mb-0">Kebun Buah Mangunan menawarkan pemandangan alam yang indah sekali. Menjadi salah satu tempat hits di Jogja, pengunjung pun berdatangan kesini karena daya tariknya. Salah satu ciri khasnya; view kabut yang indah, mengular membungkus dataran. Dan semuanya bisa anda nikmati dari ketinggian.</p>
-        </div>
+      <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/sepeda.jfif');"></div>
+      <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+        <h2>Tahukah Anda?</h2>
+        <p class="lead mb-0">Selain meningkatan suasa hati, bersepeda juga dapat mencegah penyakit jantung.
+          Bersepeda sejauh 20 mil dalam seminggu dapat mengurangi resiko terkena penyakit jantung koroner sebesar 50 persen. Sementara itu bersepeda juga bisa menghilangkan kerutan tanda-tanda penuaan.</p>
       </div>
     </div>
-  </section>
+    <div class="row no-gutters">
+      <div class="col-lg-6 text-white showcase-img" style="background-image: url('img/pantai1.jpg');"></div>
+      <div class="col-lg-6 my-auto showcase-text">
+        <h2>Pantai Nglambor</h2>
+        <p class="lead mb-0">Di Yogya juga terdapat pantai yang bisa untuk snorkeling asyik lho, tempatnya di pantai nglambor. Tidak seperti pantai selatan lainnya, disini terdapat laguna dengan air yang cukup tenang. Kekayaan alam disini bisa kita nikmati sambil snorkeling. Selain itu, terdapat juga berbagai spot unik dan asyik untuk berfoto. Anda juga bisa menyeberang ke pulau kecil menggunakan jembatan tali, sambil uji nyali! Destinasi wisata Jogja yang satu ini wajib anda kunjungi.</p>
+      </div>
+    </div>
+    <div class="row no-gutters">
+      <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/mangunan.jpg');"></div>
+      <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+        <h2>Kebun Buah Mangunan</h2>
+        <p class="lead mb-0">Kebun Buah Mangunan menawarkan pemandangan alam yang indah sekali. Menjadi salah satu tempat hits di Jogja, pengunjung pun berdatangan kesini karena daya tariknya. Salah satu ciri khasnya; view kabut yang indah, mengular membungkus dataran. Dan semuanya bisa anda nikmati dari ketinggian.</p>
+      </div>
+    </div>
+  </div>
+</section>
 </div>
 
       <br><br><br>
