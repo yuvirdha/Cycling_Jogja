@@ -65,7 +65,6 @@ class TabelSepedaController extends Controller
 
         DB::table('sepedas')->where('id',$request->id)->update([
 
-            'gambar_sepeda' => $request->gambar_sepeda,
             'jenis' => $request->jenis,
             'harga' => $request->harga,
             'stock' => $request->stock,
