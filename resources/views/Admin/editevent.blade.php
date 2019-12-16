@@ -112,9 +112,7 @@
                             <div class="form-group row">
                                     <label class="col-sm-2 col-form-label">Gambar Event</label>
                                     <div class="col-sm-5">
-                                    <image src="{{ url('/images/'.$e->gambar_event) }}"></image>
-                                      <input type="file" name="gambar_event">
-                                     
+                                    <image src="{{ url('/images/'.$e->gambar_event) }}"></image>       
                                     </div>
                                   </div>
                                     <div class="form-group row">
