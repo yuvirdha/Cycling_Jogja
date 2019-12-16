@@ -11,7 +11,7 @@
                     Daftar
                 </span>
 
-                {{-- gambar profil --}}
+                {{-- gambar profil
                 <div>
                     <span>
                     <input class="input100"id="gambarprofil" type="file" class="avatar-upload @error('gambarprofil') is-invalid @enderror" name="gambarprofil" value="{{ old('gambarprofil') }}" required autocomplete="gambarprofil" autofocus>
@@ -22,7 +22,7 @@
                         </span>
                     @enderror
                     </span>
-                </div>
+                </div> --}}
 
                 {{-- nama --}}
                 <div class="wrap-input100 validate-input">

@@ -59,13 +59,13 @@
 
         <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/sepeda.jfif');"></div>
         <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-          <h2>Tahukah Anda ??</h2>
+          <h2>Tahukah Anda?</h2>
           <p class="lead mb-0">Selain meningkatan suasa hati, bersepeda juga dapat mencegah penyakit jantung.
             Bersepeda sejauh 20 mil dalam seminggu dapat mengurangi resiko terkena penyakit jantung koroner sebesar 50 persen. Sementara itu bersepeda juga bisa menghilangkan kerutan tanda-tanda penuaan.</p>
         </div>
       </div>
-      <div class="row no-gutters">
-      <div class="col-lg-6 text-white showcase-img" style="background-image: url('img/pantai1.jpg');"></div>
+      <div class="row no-gutters"
+        <div class="col-lg-6 text-white showcase-img" style="background-image: url('img/pantai1.jpg');"></div>
         <div class="col-lg-6 my-auto showcase-text">
           <h2>Pantai Nglambor</h2>
           <p class="lead mb-0">Di Yogya juga terdapat pantai yang bisa untuk snorkeling asyik lho, tempatnya di pantai nglambor. Tidak seperti pantai selatan lainnya, disini terdapat laguna dengan air yang cukup tenang. Kekayaan alam disini bisa kita nikmati sambil snorkeling. Selain itu, terdapat juga berbagai spot unik dan asyik untuk berfoto. Anda juga bisa menyeberang ke pulau kecil menggunakan jembatan tali, sambil uji nyali! Destinasi wisata Jogja yang satu ini wajib anda kunjungi.</p>
