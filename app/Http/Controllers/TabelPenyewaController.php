@@ -10,7 +10,7 @@ class TabelPenyewaController extends Controller
     public function index()
     {
     	$penyewa = DB::table('penyewas')->get();
-    	return view('/admin/tabel_penyewa',compact('penyewa'));
+    	return view('/Admin/tabel_penyewa',compact('penyewa'));
  
     }
     public function hapus($id)
@@ -18,7 +18,7 @@ class TabelPenyewaController extends Controller
     
         DB::table('penyewas')->where('id',$id)->delete();
             
-        return redirect('/admin/tabel_penyewa');
+        return redirect('/Admin/tabel_penyewa');
     }
 
 }

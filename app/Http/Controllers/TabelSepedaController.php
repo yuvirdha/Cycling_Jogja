@@ -11,14 +11,14 @@ class TabelSepedaController extends Controller
     public function index()
     {
     	$sepedas = DB::table('sepedas')->get();
-    	return view('/admin/tabel_sepeda',compact('sepedas'));
+    	return view('/Admin/tabel_sepeda',compact('sepedas'));
  
     }
 
     public function create()
     {
 
-        return view('/admin/tambahsepeda');
+        return view('/Admin/tambahsepeda');
 
     }
 
@@ -47,7 +47,7 @@ class TabelSepedaController extends Controller
         ]);
     
 
-        return redirect('/admin/tabel_sepeda');
+        return redirect('/Admin/tabel_sepeda');
     }
 
     public function edit($id)
@@ -55,7 +55,7 @@ class TabelSepedaController extends Controller
 
         $sepedas = DB::table('sepedas')->where('id',$id)->get();
 
-        return view('/admin/editsepeda',compact('sepedas'));
+        return view('/Admin/editsepeda',compact('sepedas'));
 
 
     }
@@ -71,7 +71,7 @@ class TabelSepedaController extends Controller
             'stock' => $request->stock,
         ]);
 
-        return redirect('/admin/tabel_sepeda');
+        return redirect('/Admin/tabel_sepeda');
     }
 
     public function hapus($id)
@@ -79,7 +79,7 @@ class TabelSepedaController extends Controller
 
         DB::table('sepedas')->where('id',$id)->delete();
             
-        return redirect('/admin/tabel_sepeda');
+        return redirect('/Admin/tabel_sepeda');
     }
 
 }

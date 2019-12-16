@@ -19,7 +19,7 @@ class TabelEventController extends Controller
 public function create()
 {
 
-	return view('/admin/tambahevent');
+	return view('/Admin/tambahevent');
 
 }
 public function store(Request $request)
@@ -50,7 +50,7 @@ public function store(Request $request)
 
 	// die;
 
-	return redirect('/admin/tabel_event');
+	return redirect('/Admin/tabel_event');
 
 }
 public function edit($id)
@@ -58,7 +58,7 @@ public function edit($id)
 
     $events = DB::table('events')->where('id',$id)->get();
 
-    return view('/admin/editevent',compact('events'));
+    return view('/Admin/editevent',compact('events'));
 
 
 }
@@ -76,7 +76,7 @@ public function update(Request $request)
         'harga_tiket' => $request->harga_tiket
 	]);
 
-	return redirect('/admin/tabel_event');
+	return redirect('/Admin/tabel_event');
 }
 
 public function hapus($id)
@@ -84,6 +84,6 @@ public function hapus($id)
 
 	DB::table('events')->where('id',$id)->delete();
 		
-	return redirect('/admin/tabel_event');
+	return redirect('/Admin/tabel_event');
 }
 }
