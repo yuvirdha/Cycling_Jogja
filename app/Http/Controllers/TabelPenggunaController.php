@@ -22,7 +22,7 @@ class TabelPenggunaController extends Controller
 
 		DB::table('users')->where('id',$id)->delete();
 			
-		return redirect('/Admin/tabel_pengguna');
+		return redirect('/admin/tabel_pengguna');
 
 	}
 }

@@ -47,7 +47,7 @@ class TabelSepedaController extends Controller
         ]);
     
 
-        return redirect('/Admin/tabel_sepeda');
+        return redirect('/admin/tabel_sepeda');
     }
 
     public function edit($id)
@@ -71,7 +71,7 @@ class TabelSepedaController extends Controller
             'stock' => $request->stock,
         ]);
 
-        return redirect('/Admin/tabel_sepeda');
+        return redirect('/admin/tabel_sepeda');
     }
 
     public function hapus($id)
@@ -79,7 +79,7 @@ class TabelSepedaController extends Controller
 
         DB::table('sepedas')->where('id',$id)->delete();
             
-        return redirect('/Admin/tabel_sepeda');
+        return redirect('/admin/tabel_sepeda');
     }
 
 }

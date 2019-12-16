@@ -76,7 +76,7 @@ public function update(Request $request)
         'harga_tiket' => $request->harga_tiket
 	]);
 
-	return redirect('/Admin/tabel_event');
+	return redirect('/admin/tabel_event');
 }
 
 public function hapus($id)
@@ -84,6 +84,6 @@ public function hapus($id)
 
 	DB::table('events')->where('id',$id)->delete();
 		
-	return redirect('/Admin/tabel_event');
+	return redirect('/admin/tabel_event');
 }
 }

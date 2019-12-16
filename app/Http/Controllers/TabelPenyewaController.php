@@ -18,7 +18,7 @@ class TabelPenyewaController extends Controller
     
         DB::table('penyewas')->where('id',$id)->delete();
             
-        return redirect('/Admin/tabel_penyewa');
+        return redirect('/admin/tabel_penyewa');
     }
 
 }

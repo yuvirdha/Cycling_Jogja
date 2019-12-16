@@ -21,7 +21,7 @@ class TabelTiketController extends Controller
     
         DB::table('pendaftars')->where('id',$id)->delete();
             
-        return redirect('/Admin/tabel_tiket');
+        return redirect('/admin/tabel_tiket');
     }
 
 // public function hapus($id)
