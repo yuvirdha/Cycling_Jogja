@@ -113,7 +113,7 @@
                                     <label class="col-sm-2 col-form-label">Gambar Event</label>
                                     <div class="col-sm-5">
                                     <image src="{{ url('/images/'.$e->gambar_event) }}"></image>
-                                      <input type="file" required="required" name="gambar_event">
+                                      <input type="file" name="gambar_event">
                                      
                                     </div>
                                   </div>
