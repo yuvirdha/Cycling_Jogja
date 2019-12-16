@@ -47,34 +47,34 @@
       <br>
       <br>
       <br>
-
-
-         <section class="showcase">
-          <div class="container-fluid p-0">
-            <div class="row no-gutters">
-      
-              <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/bg-showcase-4.png');"></div>
-              <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-                <h2>Fully Responsive Design</h2>
-                <p class="lead mb-0">When you use a theme created by Start Bootstrap, you know that the theme will look great on any device, whether it's a phone, tablet, or desktop the page will behave responsively!</p>
-              </div>
-            </div>
-            <div class="row no-gutters">
-              <div class="col-lg-6 text-white showcase-img" style="background-image: url('img/bg-showcase-2.jpg');"></div>
-              <div class="col-lg-6 my-auto showcase-text">
-                <h2>Updated For Bootstrap 4</h2>
-                <p class="lead mb-0">Newly improved, and full of great utility classes, Bootstrap 4 is leading the way in mobile responsive web development! All of the themes on Start Bootstrap are now using Bootstrap 4!</p>
-              </div>
-            </div>
-            <div class="row no-gutters">
-              <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/bg-showcase-3.jpg');"></div>
-              <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-                <h2>Easy to Use &amp; Customize</h2>
-                <p class="lead mb-0">Landing Page is just HTML and CSS with a splash of SCSS for users who demand some deeper customization options. Out of the box, just add your content and images, and your new landing page will be ready to go!</p>
-              </div>
+      <section class="showcase">
+        <div class="container-fluid p-0">
+          <div class="row no-gutters">
+    
+            <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/sepeda.jfif');"></div>
+            <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+              <h2>Tahukah Anda ??</h2>
+              <p class="lead mb-0">Selain meningkatan suasa hati, bersepeda juga dapat mencegah penyakit jantung.
+                Bersepeda sejauh 20 mil dalam seminggu dapat mengurangi resiko terkena penyakit jantung koroner sebesar 50 persen. Sementara itu bersepeda juga bisa menghilangkan kerutan tanda-tanda penuaan.</p>
             </div>
           </div>
-        </section>
+          <div class="row no-gutters">
+            <div class="col-lg-6 text-white showcase-img" style="background-image: url('img/pantai1.jpg');"></div>
+            <div class="col-lg-6 my-auto showcase-text">
+              <h2>Pantai Nglambor</h2>
+              <p class="lead mb-0">Di Yogya juga terdapat pantai yang bisa untuk snorkeling asyik lho, tempatnya di pantai nglambor. Tidak seperti pantai selatan lainnya, disini terdapat laguna dengan air yang cukup tenang. Kekayaan alam disini bisa kita nikmati sambil snorkeling. Selain itu, terdapat juga berbagai spot unik dan asyik untuk berfoto. Anda juga bisa menyeberang ke pulau kecil menggunakan jembatan tali, sambil uji nyali! Destinasi wisata Jogja yang satu ini wajib anda kunjungi.</p>
+            </div>
+          </div>
+          <div class="row no-gutters">
+            <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/mangunan.jpg');"></div>
+            <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+              <h2>Kebun Buah Mangunan</h2>
+              <p class="lead mb-0">Kebun Buah Mangunan menawarkan pemandangan alam yang indah sekali. Menjadi salah satu tempat hits di Jogja, pengunjung pun berdatangan kesini karena daya tariknya. Salah satu ciri khasnya; view kabut yang indah, mengular membungkus dataran. Dan semuanya bisa anda nikmati dari ketinggian.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    
 
       </div>
          <section class="testimonials text-center bg-light">
