@@ -146,8 +146,8 @@
 
       </div>
       <!-- End of Main Content -->
+
       <!-- Footer -->
-      @include('include.footerAd')
       <!-- End of Footer -->
 
     </div>

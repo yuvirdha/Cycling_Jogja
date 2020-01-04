@@ -21,6 +21,13 @@ class TentangController extends Controller
         return view('tentang', compact('events'));
     }
 
+    public function kontak()
+    {
+             
+        return view('kontak');
+    }
+
+
     /**
      * Show the form for creating a new resource.
      *

@@ -35,25 +35,26 @@
 <div class="row">
   <div class="col-md-1">
   </div>
-  <div class="col-md-6">
+  <div class="col-md-5">
+    <img src="{{ url('/images/oracle.jpeg') }}">
   </div>
-  <div class="col-md-4">
-  <h2 class="card-title">Tentang Web Kami</h2>
-  <p class="card-text"></p>
-  <div class="features-icons-item mx-auto mb-0 mb-lg-3">
-    <div class="features-icons-icon d-flex">
-    Oracle. Merupakan sebuah tim yang terbentuk pada tahun 2019. Berdasarkan hasil kesepakatan dengan
-    Dinas Pariwisata Provinsi DIY, kami berkesempatan untuk menciptakan sebuah aplikasi berbasis web dengan 
-    label "Cycling Jogja".
-    Persentase pendapatan Provinsi DIY di sektor pariwisata masih tergolong fluktuatif. Hal ini akan memengaruhi
-    stabilitas program pengembangan DIY. Sehingga Dinas Pariwisata Yogyakarta mencanangkan kebijakan kerja
-    untuk meningkatkan promosi dan pemasaran pariwisata dengan meluncurkan program Cycling Jogja. 
-    Cycling Jogja menyuguhkan suasana berwisata yang berbeda dengan fitur yang lengkap. Disetiap bulannya kami
-    menyediakan rute perjalanan yang melalui tempat wisata, warung kuliner, dan acara yang sedang berlangsung pada
-    bulan tersebut, beserta infomasinya secara lengkap. Menariknya, Cycling Jogja menyediakan fitur sewa sepeda
-    dengan harga terjangkau dan dapat dipesan dimanapun dan kapanpun.
-    Cycling Jogja berkomitmen untuk menjadi mitra berwisata Anda yang menyenangkan dengan bersepeda.
-    </div>
+  <div class="col-md-5">
+    <h2 class="card-title">Tentang Web Kami</h2>
+    <p class="card-text"></p>
+    <div class="features-icons-item mx-auto mb-0 mb-lg-3">
+      <div class="features-icons-icon d-flex">
+      Oracle. Merupakan sebuah tim yang terbentuk pada tahun 2019. Berdasarkan hasil kesepakatan dengan
+      Dinas Pariwisata Provinsi DIY, kami berkesempatan untuk menciptakan sebuah aplikasi berbasis web dengan 
+      label "Cycling Jogja". <br>
+      Persentase pendapatan Provinsi DIY di sektor pariwisata masih tergolong fluktuatif. Hal ini akan memengaruhi
+      stabilitas program pengembangan DIY. Sehingga Dinas Pariwisata Yogyakarta mencanangkan kebijakan kerja
+      untuk meningkatkan promosi dan pemasaran pariwisata dengan meluncurkan program Cycling Jogja. <br>
+      Cycling Jogja menyuguhkan suasana berwisata yang berbeda dengan fitur yang lengkap. Disetiap bulannya kami
+      menyediakan rute perjalanan yang melalui tempat wisata, warung kuliner, dan acara yang sedang berlangsung pada
+      bulan tersebut, beserta infomasinya secara lengkap. Menariknya, Cycling Jogja menyediakan fitur sewa sepeda
+      dengan harga terjangkau dan dapat dipesan dimanapun dan kapanpun.<br>
+      Cycling Jogja berkomitmen untuk menjadi mitra berwisata Anda yang menyenangkan dengan bersepeda.
+      </div>
     </div>
   </div>
 </div>
@@ -61,9 +62,47 @@
  
 </div>
 
-  @include('include.upcommingeventbef')
+<section class="testimonials text-center bg-light">
+  <div class="container">
+    <br><br><br>
+    <h2 class="mb-5">Tim Oracle</h2>
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+          <img class="img-fluid rounded-circle mb-3" src="img/virdha.jpg" alt="">
+          <h5>Yuvirdha Bektie W</h5>
+          <p class="font-weight-light mb-0">18523147</p>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+          <img class="img-fluid rounded-circle mb-3" src="img/dilfa.jpeg" alt="">
+          <h5>Dilfa Salsabiela</h5>
+          <p class="font-weight-light mb-0">18523054</p>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+          <img class="img-fluid rounded-circle mb-3" src="img/laila.jpeg" alt="">
+          <h5>Laila Kusuma W</h5>
+          <p class="font-weight-light mb-0">18523010</p>
+        </div>
+      </div>
+      <div class="col-lg-3">
+          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+            <img class="img-fluid rounded-circle mb-3" src="img/avil.jpeg" alt="">
+            <h5>Avilia Kusumaputeri N</h5>
+            <p class="font-weight-light mb-0">18523174</p>
+          </div>
+        </div>
+    </div>
+  </div>
+</section>
 
-  @include('include.footer')
+
+</div>
+@include('include.signup')
+@include('include.footer')
  
 
   <!-- Bootstrap core JavaScript -->

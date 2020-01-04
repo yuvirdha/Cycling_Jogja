@@ -35,6 +35,7 @@ Route::get('/bantuan', 'BantuanController@index');
 Route::get('/bantuanbef', 'BantuanbefController@index');
 Route::get('/tentang', 'TentangController@index');
 Route::get('/tentangbef', 'TentangbefController@index');
+Route::get('/kontak', 'TentangController@kontak');
 
 Route::get('/pemesanan/{id}', 'PemesananController@index');
 Route::get('/pesan_tiket/{id_event}', 'PemesananController@store');

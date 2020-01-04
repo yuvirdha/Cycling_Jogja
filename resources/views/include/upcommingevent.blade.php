@@ -2,9 +2,9 @@
     <div class="container">
 
       <!-- Page Heading -->
-      <h2 class="my-4">Event yang Akan Datang
+      <h3 class="my-4">Event yang Akan Datang
         <small></small>
-      </h2>
+      </h3>
 
       <!-- Project One -->
       <div class="card">
