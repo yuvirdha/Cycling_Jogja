@@ -48,9 +48,14 @@
                                     <td><h6>{{ $event->waktu_pelaksanaan}}</h6></td>
                                   </tr>
                                   <tr>  
-                                      <td><i class="fas fa-route m-auto text primary" style="color:#F38230;"></i></td>
+                                      <td><i class="fas fa-biking m-auto text primary" style="color:#F38230;"></i></td>
                                       <td> </td>
                                       <td><h6>{{ $event->rute}}</h6></td>
+                                    </tr>
+                                    <tr>  
+                                      <td><i class="fas fa-route m-auto text primary" style="color:#F38230;"></i></td>
+                                      <td> </td>
+                                      <td><h6>{{ $event->jarak}}</h6></td>
                                     </tr>
                                     <tr>  
                                         <td><i class="fas fa-ticket-alt m-auto text primary" style="color:#F38230;"></i></td>

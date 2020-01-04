@@ -30,11 +30,16 @@
                 <td><h6>{{ $q->waktu_pelaksanaan}}</h6></td>
               </tr>
               <tr>  
-                  <td><i class="fas fa-route m-auto text primary" style="color:#F38230;"></i></td>
+                  <td><i class="fas fa-biking m-auto text primary" style="color:#F38230;"></i></td>
                   <td> </td>
                   <td><h6>{{ $q->rute}}</h6></td>
                 </tr>
                 <tr>  
+                  <td><i class="fas fa-route m-auto text primary" style="color:#F38230;"></i></td>
+                  <td> </td>
+                  <td><h6>{{ $q->jarak}}</h6></td>
+                </tr>
+          
                     <td><i class="fas fa-ticket-alt m-auto text primary" style="color:#F38230;"></i></td>
                     <td> </td>
                     <td><h6>{{ $q->harga_tiket}}</h6></td>
