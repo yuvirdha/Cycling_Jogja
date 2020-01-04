@@ -138,6 +138,12 @@
                                       </div>
                                     </div>  
                                     <div class="form-group row">
+                                            <label class="col-sm-2 col-form-label">Jarak</label>
+                                            <div class="col-sm-5">
+                                              <input type="text" name="jarak" required="required" class="form-control">
+                                            </div>
+                                          </div>   
+                                    <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">Harga Tiket</label>
                                             <div class="col-sm-5">
                                               <input type="text" name="harga_tiket" required="required" class="form-control">

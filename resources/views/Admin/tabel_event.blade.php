@@ -112,6 +112,7 @@
                             <th>Rincian</th>
                             <th>Waktu Pelaksanaan</th>
                             <th>Rute</th>
+                            <th>Jarak</th>
                             <th>Harga Tiket</th>
                             <th>Update</th>
                     </tr>
@@ -124,6 +125,7 @@
                             <th>Rincian</th>
                             <th>Waktu Pelaksanaan</th>
                             <th>Rute</th>
+                            <th>Jarak</th>
                             <th>Harga Tiket</th>
                             <th>Update</th>
                     </tr>
@@ -140,6 +142,7 @@
                             <td>{{ $e->rincian_event}}</td>
                             <td>{{ $e->waktu_pelaksanaan}}</td>
                             <td>{{ $e->rute}}</td>
+                            <td>{{ $e->jarak}}</td>
                             <td>{{ $e->harga_tiket}}</td>
                             <td>
                                 <a href="/admin/hapus_event/{{ $e->id }}" class="btn btn-primary">Hapus</a>

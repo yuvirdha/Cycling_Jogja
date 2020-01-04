@@ -140,6 +140,13 @@
                                       </div>
                                     </div>  
                                     <div class="form-group row">
+                                            <label class="col-sm-2 col-form-label">Jarak</label>
+                                            <div class="col-sm-5">
+                                                    <input type="text" required="required" name="jarak" value="{{ $e->jarak}}" class="form-control">
+
+                                            </div>
+                                          </div>   
+                                    <div class="form-group row">
                                             <label class="col-sm-2 col-form-label">Harga Tiket</label>
                                             <div class="col-sm-5">
                                                     <input type="text" required="required" name="harga_tiket" value="{{ $e->harga_tiket}}" class="form-control">

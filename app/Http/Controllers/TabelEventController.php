@@ -44,6 +44,7 @@ public function store(Request $request)
 		'rincian_event' => $request->rincian_event,
 		'waktu_pelaksanaan' => $request->waktu_pelaksanaan,
 		'rute' => $request->rute,
+		'jarak' => $request->jarak,
 		'harga_tiket' => $request->harga_tiket,
 		'gambar_event' => $img,
 	]);
@@ -70,7 +71,8 @@ public function update(Request $request)
 		'nama_event' => $request->nama_event,
 		'rincian_event' => $request->rincian_event,
         'waktu_pelaksanaan' => $request->waktu_pelaksanaan,
-        'rute' => $request->rute,
+		'rute' => $request->rute,
+		'jarak' => $request->jarak,
         'harga_tiket' => $request->harga_tiket
 	]);
 
